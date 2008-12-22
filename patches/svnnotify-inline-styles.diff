@@ -1,0 +1,149 @@
+Index: /locals/svnnotify/lib/SVN/Notify/HTML.pm
+===================================================================
+--- /locals/svnnotify/lib/SVN/Notify/HTML.pm (revision 15686)
++++ /locals/svnnotify/lib/SVN/Notify/HTML.pm (revision 15687)
+@@ -239,8 +239,8 @@
+     print $out qq{--></style>\n};
+ 
+-    my @html = ( qq{<div id="msg">\n} );
++    my @html = ( qq{<div id="msg" style="color:black;">\n} );
+     if (my $header = $self->header) {
+         push @html, (
+-            '<div id="header">',
++            '<div id="header" style="font-family: verdana,arial,helvetica,sans-serif; font-size: 10pt; ">',
+             ( $header =~ /^</  ? $header : encode_entities($header, '<>&"') ),
+             "</div>\n",
+@@ -301,5 +301,8 @@
+     }
+ 
+-    print $out qq{<dl class="meta">\n<dt>Revision</dt> <dd>};
++    print $out (
++        qq{<dl class="meta" style="border: 1px #006 solid; background: #369; padding: 6px; color: #fff; font-family: verdana,arial,helvetica,sans-serif; font-size: 10pt;">\n},
++        qq{<dt style="float: left; width: 6em; font-weight: bold;font-family: verdana,arial,helvetica,sans-serif; font-size: 10pt;">Revision:</dt> <dd>}
++    );
+ 
+     my $rev = $self->revision;
+@@ -307,5 +310,5 @@
+         $url = encode_entities($url, '<>&"');
+         # Make the revision number a URL.
+-        printf $out qq{<a href="$url">$rev</a>}, $rev;
++        printf $out qq{<a style="color: white;font-weight: bold;" href="$url">$rev</a>}, $rev;
+     } else {
+         # Just output the revision number.
+@@ -314,9 +317,9 @@
+ 
+     # Output the committer and a URL, if there is one.
+-    print $out "</dd>\n<dt>Author</dt> <dd>";
++    print $out qq{</dd>\n<dt style="float: left; width: 6em; font-weight: bold;font-family: verdana,arial,helvetica,sans-serif; font-size: 10pt;">Author:</dt> <dd>};
+     my $user = encode_entities($self->user, '<>&"');
+     if (my $url = $self->author_url) {
+         $url = encode_entities($url, '<>&"');
+-        printf $out qq{<a href="$url">$user</a>}, $user;
++        printf $out qq{<a style="color: white;font-weight: bold" href="$url">$user</a>}, $user;
+     } else {
+         # Just output the username
+@@ -326,5 +329,5 @@
+     print $out (
+         "</dd>\n",
+-        '<dt>Date</dt> <dd>',
++        qq{<dt style="float: left; width: 6em; font-weight: bold;font-family: verdana,arial,helvetica,sans-serif; font-size: 10pt;">Date:</dt> <dd>},
+         encode_entities($self->date, '<>&"'), "</dd>\n",
+         "</dl>\n\n"
+@@ -395,13 +398,13 @@
+     print $out "<h3>Log Message</h3>\n";
+     if ($filters || $self->wrap_log) {
+-        $msg = '<p>' . join( "</p>\n\n<p>", split /\n\s*\n/, $msg ) . '</p>'
++        $msg = '<p style="margin: 0 0 1em 0;line-height: 14pt;">' . join( "</p>\n\n<p style=\"margin: 0 0 1em 0;line-height: 14pt;\">", split /\n\s*\n/, $msg ) . '</p>'
+             if !$filters && $self->wrap_log;
+         print $out (
+-            qq{<div id="logmsg">\n},
++            qq{<div id="logmsg" style="background: #ffc; border: 1px #fa0 solid; padding: 0 1em 0 1em; font-family: verdana,arial,helvetica,sans-serif; font-size: 10pt;">\n},
+             $msg,
+             qq{</div>\n\n},
+         )
+     } else {
+-        print $out "<pre>$msg</pre>\n\n";
++        print $out qq{<pre style="overflow: auto; background: #ffc; border: 1px #fa0 solid; padding: 6px;">$msg</pre>\n\n};
+     }
+     return $self;
+Index: /locals/svnnotify/lib/SVN/Notify/HTML/ColorDiff.pm
+===================================================================
+--- /locals/svnnotify/lib/SVN/Notify/HTML/ColorDiff.pm (revision 15686)
++++ /locals/svnnotify/lib/SVN/Notify/HTML/ColorDiff.pm (revision 15687)
+@@ -107,5 +107,5 @@
+         if ( $max && ( $length += length $line ) >= $max ) {
+             print $out "</$in_span>" if $in_span;
+-            print $out qq{<span class="lines">\@\@ Diff output truncated at $max characters. \@\@\n</span>};
++            print $out qq{<span class="lines" style="display:block;padding:0 10px;color:#888;background:#fff;">\@\@ Diff output truncated at $max characters. \@\@\n</span>};
+             $in_span = '';
+             last;
+@@ -124,6 +124,6 @@
+                     # Looks like they used --no-diff-added or --no-diff-deleted.
+                     ($in_span, $in_div) = '';
+-                    print $out qq{<a id="$id"></a>\n<div class="$class">},
+-                        qq{<h4>$action: $file</h4></div>\n};
++                    print $out qq{<a id="$id"></a>\n<div class="$class" style="border:1px solid #ccc;margin:10px 0;">},
++                        qq{<h4 style="font-family: verdana,arial,helvetica,sans-serif;font-size:10pt;padding:8px;background:#369;color:#fff;margin:0;">$action: $file</h4></div>\n};
+                     next;
+                 }
+@@ -135,7 +135,9 @@
+                 if ($before =~ /^\(Binary files differ\)/) {
+                     # Just output the whole file div.
+-                    print $out qq{<a id="$id"></a>\n<div class="binary"><h4>},
+-                      qq{$action: $file</h4>\n<pre class="diff"><span>\n},
+-                      qq{<span class="cx">$before\n</span></span></pre></div>\n};
++                    print $out qq{<a id="$id"></a>\n<div class="binary" style="border:1px solid #ccc;margin:10px 0;"><h4 style="font-family: verdana,arial,helvetica,sans-serif;font-size:10pt;padding:8px;background:#369;color:#fff;margin:0;">},
++                      qq{$action: $file</h4>\n},
++                      qq{<pre class="diff" style="color:black;padding:0;line-height:1.2em;margin:0;width:100%;background:#eee;padding: 0 0 10px 0;overflow:auto;font-family:'Andale Mono','Courier New',monospace;font-size:9pt;">},
++                      qq{<span style="display:block;padding:0 10px;">\n},
++                      qq{<span style="display:block;padding:0 10px;">$before\n</span></span></pre></div>\n};
+                     ($in_span, $in_div) = '';
+                     next;
+@@ -148,7 +150,9 @@
+ 
+                 # Output the headers.
+-                print $out qq{<a id="$id"></a>\n<div class="$class"><h4>$action: $file},
++                print $out qq{<a id="$id"></a>\n<div class="$class" style="border:1px solid #ccc;margin:10px 0;">},
++                           qq{<h4 style="font-family: verdana,arial,helvetica,sans-serif;font-size:10pt;padding:8px;background:#369;color:#fff;margin:0;">$action: $file},
+                   " ($rev1 => $rev2)</h4>\n";
+-                print $out qq{<pre class="diff"><span>\n<span class="info">};
++                print $out qq{<pre class="diff" style="color:black;padding:0;line-height:1.2em;margin:0;width:100%;background:#eee;padding: 0 0 10px 0;overflow:auto;font-family:'Andale Mono','Courier New',monospace;font-size:9pt;">},
++                           qq{<span style="display:block;padding:0 10px;">\n<span class="info" style="display:block;padding:0 10px;color:#888;background:#fff;">};
+                 $in_div = 1;
+                 print $out encode_entities($_, '<>&"'), "\n" for ($before, $after);
+@@ -165,6 +169,9 @@
+                 print $out "</$in_span>" if $in_span;
+                 print $out "</span></pre></div>\n" if $in_div;
+-                print $out qq{<a id="$id"></a>\n<div class="propset">},
+-                  qq{<h4>Property changes: $file</h4>\n<pre class="diff"><span>\n};
++                print $out qq{<a id="$id"></a>\n<div class="propset" style="border:1px solid #ccc;margin:10px 0;">},
++                  qq{<h4 style="font-family: verdana,arial,helvetica,sans-serif;font-size:10pt;padding:8px;background:#369;color:#fff;margin:0;">},
++                  qq{Property changes: $file</h4>\n},
++                  qq{<pre class="diff" style="color:black;padding:0;line-height:1.2em;margin:0;width:100%;background:#eee;padding: 0 0 10px 0;overflow:auto;font-family:'Andale Mono','Courier New',monospace;font-size:9pt;">},
++                  qq{<span style="display:block;padding:0 10px;">\n};
+                 $in_div = 1;
+                 $in_span = '';
+@@ -172,5 +179,5 @@
+                 print $out "</$in_span>" if $in_span;
+                 print $out (
+-                    qq{<span class="lines">},
++                    qq{<span class="lines" style="display:block;padding:0 10px;color:#888;background:#fff;">},
+                     encode_entities($line, '<>&"'),
+                     "\n</span>",
+@@ -182,7 +189,8 @@
+                     print $out encode_entities($line, '<>&"'), "\n";
+                 } else {
++                    my $clr = $type eq 'ins' ? '#dfd' : '#fdd';
+                     print $out "</$in_span>" if $in_span;
+                     print $out (
+-                        qq{<$type>},
++                        qq{<$type style="background-color:$clr;text-decoration:none;display:block;padding:0 10px;">},
+                         encode_entities($line, '<>&"'),
+                         "\n",
+@@ -196,5 +204,5 @@
+                     print $out "</$in_span>" if $in_span;
+                     print $out (
+-                        qq{<span class="cx">},
++                        qq{<span class="cx" style="display:block;padding:0 10px;">},
+                         encode_entities($line, '<>&"'),
+                         "\n",
