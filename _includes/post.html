@@ -1,0 +1,33 @@
+<div class='entry'>
+  <h1 class='title'><a href='{{ post.url }}'>{{ post.title }}</a></h1>
+  <div class='byline'>{{ post.date | date:"%B %d, %Y @ %H:%M" }}</div>
+  <div class='body'>
+    {% if hide_extended %}
+      {{ post.content }}
+      {% if post.extended.size > 0 %}
+      <p>Continue reading at <a href='{{ post.url }}'>{{ post.title }}</a>.</p>
+      {% endif %}
+    {% else %}
+      {{ post.content }}
+      {{ post.extended }}
+    {% endif %}
+  </div>
+  <div class='footer'>
+    <div class='comments'>
+    </div>
+    <div class='tags'>
+      <span>
+	tags:
+	{% for t in post.tags %}
+	<a href='http://www.google.com/search?q={{ t | escape }}+site:metajack.im'>{{ t }}</a>{% if forloop.last == false %}, {% endif %}
+	{% endfor %}
+      </span>
+    </div>
+    <div class='comments'>
+      <span>
+	comments: 
+	<a href='{{ post.url }}#disqus_thread'>View Comments</a>
+      </span>
+    </div>
+  </div>
+</div>

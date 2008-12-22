@@ -1,0 +1,10 @@
+---
+layout: base
+title: metajack.im - a blog about startups and code
+---
+
+{% assign hide_extended = true %}
+
+{% for post in site.posts limit:10 %}
+{% include post.html %}
+{% endfor %}

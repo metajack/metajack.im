@@ -1,0 +1,151 @@
+---
+scripts:
+  -
+    name: cloud
+    command: generate_cloud.py 50 10
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="/styles.css" 
+	type="text/css" />
+  <link rel="start" href="http://metajack.im/" 
+	title="Home" />
+  <link rel="alternate" type="application/atom+xml" 
+	title="Recent Entries" href="http://feeds.feedburner.com/metajack" />
+
+  <link type="text/css" rel="stylesheet" 
+	href="/syntaxhighlight/css/SyntaxHighlighter.css" />
+  <script language="javascript" type='text/javascirpt' 
+	  src="/syntaxhighlight/js/shCore.js"></script>
+  <script language="javascript" type='text/javascript'
+	  src="/syntaxhighlight/js/shBrushCpp.js"></script>
+  <script language="javascript" type='text/javascript'
+	  src="/syntaxhighlight/js/shBrushCss.js"></script>
+  <script language="javascript" type='text/javascript'
+	  src="/syntaxhighlight/js/shBrushJScript.js"></script>
+  <script language="javascript" type='text/javascript'
+	  src="/syntaxhighlight/js/shBrushPython.js"></script>
+  <script language="javascript" type='text/javascript'
+	  src="/syntaxhighlight/js/shBrushSql.js"></script>
+  <script language="javascript" type='text/javascript'
+	  src="/syntaxhighlight/js/shBrushXml.js"></script>
+
+  <!--
+      <rdf:RDF xmlns="http://web.resource.org/cc/"
+               xmlns:dc="http://purl.org/dc/elements/1.1/"
+	       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <Work rdf:about="http://metajack.im/">
+	  <dc:title>metajack.im</dc:title>
+	  <dc:description>a blog about startups and code</dc:description>
+	  <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" />
+	</Work>
+	<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
+	</License>
+      </rdf:RDF>
+  -->
+
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <div id="sidebar">
+    <div id="header">
+      <h1 id="header-name">
+	<a href="http://metajack.im/">meta<span>jack</span>.im</a>
+      </h1>
+      <h2 id="header-description">
+	a blog about <b>startups</b> and <b>code</b>
+      </h2>
+      <h3 id="header-byline">
+	by <a href="http://metajack.im/about/">jack moffitt</a>
+      </h3>
+    </div>
+ 
+    <hr id="header-break" />
+
+    <div class="syndication widget">
+      <a href="http://feeds.feedburner.com/metajack" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="feed icon" style="border: 0"/></a>
+      <a href="http://feeds.feedburner.com/metajack" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">Subscribe</a>
+    </div>
+
+    <div class='cloud widget'>
+      {{ cloud }}
+    </div>
+
+    <div class="search widget">
+      <form method="get" action="http://www.google.com/search">
+	<div>
+	  <input type="text" id="search" class="ti" name="q" value="" />
+	  <input type="hidden" name="q" value="site:metajack.im" />
+	  <input type="submit" value="Search" />
+	</div>
+      </form>
+    </div>
+
+    <div class="recent-entries widget">
+      <h3>Recent Entries</h3>
+      <ul>
+	{% for rpost in site.posts limit:20 %}
+	<li><a href="{{ rpost.url }}">{{ rpost.title }}</a></li>
+	{% endfor %}
+      </ul>
+    </div>
+    
+    
+  </div>
+  
+  
+  <div id="content">
+    <div id="content-spacer"></div>
+    
+    {{ content }}
+
+
+  </div>
+    
+  <div class="clear"></div>
+  <div id="footer">
+  
+    this blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">creative commons license</a>
+    
+  </div>
+
+  <script type='text/javascript'>
+    //<![CDATA[
+    dp.SyntaxHighlighter.ClipboardSwf = '/syntaxhighlight/flash/clipboard.swf';
+    dp.SyntaxHighlighter.HighlightAll('code');
+    //]]>
+  </script>
+
+  <script type="text/javascript">
+    //<![CDATA[
+      (function() {
+        var links = document.getElementsByTagName('a');
+	var query = '?';
+        for(var i = 0; i < links.length; i++) {
+	  if(links[i].href.indexOf('#disqus_thread') >= 0) {
+	    query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+	  }
+	}
+	document.write('<script type="text/javascript" src="http://disqus.com/forums/metajack/get_num_replies.js' + query + '"></' + 'script>');
+      })();
+    //]]>
+  </script>
+
+
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-5488219-1");
+    pageTracker._trackPageview();
+    /* ]]> */
+  </script>
+  
+</body>
+</html>
