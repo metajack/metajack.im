@@ -1,0 +1,33 @@
+---
+layout; nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>metajack.im</title>
+  <link rel="alternate" type="text/html" href="http://metajack.im/" />
+  <link rel="self" type="application/atom+xml" href="http://metajack.im/atom.xml" />
+  <id>tag:metajack.im,{{ site.time | date_to_utc | date:"%Y%m%d%H%M%S"}}</id>
+  <updated>{{ site.time | date_to_utc | date:"%Y-%m-%dT%H:%M:%SZ" }}</updated>
+  <subtitle>a blog about startups and code</subtitle>
+
+  {% for post in site.posts limit:15 %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link rel='alternate' type='text/html' href='{{ post.url }}' />
+    <id>tag:metajack.im:{{ post.id }}</id>
+    <updated>{{ post.date | date.getutc:"%Y-%m-%dT%H:%M:00Z" }}</updated>
+    <updated></updated>
+
+    <author>
+      <name>Jack Moffitt</name>
+      <uri>http://metajack.im</uri>
+      <email>jack@metajack.im</email>
+    </author>
+
+    <summary>{{ post.content | html_truncatewords:50 }}</summary>
+    <content type='html' xml:lang='en' xml:base='http://metajack.im/'>
+      <![CDATA[{{ post.content }}{{ post.extended }}]]>
+    </content>
+  </entry>
+  {% endfor %}
+</feed>
