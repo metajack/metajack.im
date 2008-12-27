@@ -11,10 +11,14 @@ layout; nil
   <subtitle>a blog about startups and code</subtitle>
 
   {% for post in site.posts limit:15 %}
+  {% if post.id == '/2008/12/23/some-predictions-for-2009/' %}
+  {% assign last_dash_index = forloop.index0 %}
+  {% endif %}
+  
   <entry>
     <title>{{ post.title }}</title>
     <link rel='alternate' type='text/html' href='{{ post.url }}' />
-    <id>tag:metajack.im:{{ post.id }}</id>
+    <id>tag:metajack.im:{% if forloop.index0 > last_dash_index %}{{ post.id | replace:"-","_" }}{% else %}{{ post.id }}{% endif %}</id>
     <updated>{{ post.date | date.getutc:"%Y-%m-%dT%H:%M:00Z" }}</updated>
     <updated></updated>
 
