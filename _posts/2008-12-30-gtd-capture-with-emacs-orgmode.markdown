@@ -1,11 +1,10 @@
 ---
+layout: post
 title: GTD Capture With Emacs OrgMode
 tags: [gtd, emacs, code]
+time: "13:01"
 extended: ":EXTENDED:"
 ---
-
-* remember, org-remember
-* emacs server
 
 Ubiquitous capture is the part of
 [GTD](http://en.wikipedia.org/wiki/Getting_Things_Done) that I am most
