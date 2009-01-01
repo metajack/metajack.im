@@ -11,4 +11,4 @@ extended: ":EXTENDED:"
 * nxml
 * color-theme
 * help (apropos)
-
+  can get all the way to source code in a few key presses

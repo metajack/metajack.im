@@ -1,0 +1,63 @@
+---
+layout: post
+title: 2008 In Review
+tags: [emacs, erlang, code, git, stanziq, speeqe, chesspark, ruby, haskell, startups, xmpp, jabber, xsf, bazaar]
+time: "20:14"
+extended: ":EXTENDED:"
+---
+
+It's the last day of 2008, and I have been thinking about what I have
+done this year.
+
+* [Chesspark](http://www.chehsspark.com) added many new features,
+  fixed many bugs, and tried several huge experiments.  We explored
+  the [freemium
+  model](http://metajack.im/2008/09/12/dont-be-afraid-of-change/) as
+  opposed to straight subscriptions, we launched
+  [WuChess](http://www.wuchess.com) as a branded site in cooperation
+  with [RZA](http://en.wikipedia.org/wiki/RZA), and we've spun it off
+  under new management as we pursue a new project.
+
+* [Stanziq](http://www.stanziq.com) was
+  [born](http://mashable.com/2008/12/01/stanziq/) from a combination
+  of our vision of the new [real time
+  Web](http://metajack.im/2008/09/11/real-time-is-completely-different/)
+  and many ideas we had at Chesspark.  The world needs a real time
+  search engine.
+
+* My team and I created and then released the code for
+  [Speeqe](http://www.speeqe.com), a Web 2.0 style group chat
+  application based on XMPP.  It's time for
+  [IRC](http://en.wikipedia.org/wiki/Irc) to die.
+
+* I [learned some new
+  languages](http://metajack.im/2008/10/22/be-multi-lingual-and-learn-a-new-language/).
+  I have spent quite a bit of time with
+  [Erlang](http;//www.erlang.org) this year, and I'm looking forward
+  to solving more problems with it in 2009.  I've also
+  [hacked](http://github.com/metajack/jekyll/tree/master) some
+  [Ruby](http://ruby-lang.org) for the first time.  I've been picking
+  up a bit of [Emacs Lisp](http://en.wikipedia.org/wiki/Emacs_Lisp)
+  and learning about [Haskell](http://haskell.org).
+
+* I experimented with both [Bazaar](http://bazaar-vcs.org) and
+  [Git](http://git.or.cz) heavily to replace my use of
+  [Subversion](http://subversion.tigris.org).  I ended up [picking
+  Git](http://metajack.im/2008/12/08/codestanziqcom-switching-to-git/)
+  and have been extremely happy.
+
+* I renewed my commitment to XMPP by joining both the
+  [XSF](http://www.xmpp.org) board of directors and council.
+
+* I finally achieved a long time goal of blogging more, which I hope
+  to continue.
+
+* Most important (to me at least), I gained a new family member - [my
+  son, Jasper](http://www.misterjasper.com).  He puts a smile on my
+  face every day, and something about constraints he imposes has
+  increased my productivity.
+
+I'm sure there is stuff I have forgotten.  I find it remarkable
+difficult to remember how much time has passed since various events.
+The last four years with Chesspark seem like they all happened in the
+last year.
