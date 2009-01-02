@@ -27,7 +27,8 @@ anywhere.
 
 Here's the code for those who are interested.
 
-<code><pre name='code' class='lisp'>
+<code>
+<pre name='code' class='lisp'>
 (defvar org-journal-file "~/Documents/org/journal.org"
   "Path to OrgMode journal file.")
 (defvar org-journal-date-format "%Y-%m-%d"
@@ -52,4 +53,5 @@ Here's the code for those who are interested.
     (backward-char 2)
     (unless (= (current-column) 2)
       (insert "\n\n  "))))
-</pre></code>
+</pre>
+</code>

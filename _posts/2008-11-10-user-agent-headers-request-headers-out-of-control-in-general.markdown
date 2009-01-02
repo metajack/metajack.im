@@ -14,7 +14,8 @@ Web browsers send a lot of HTTP request headers whenever they talk to a Web serv
 
 [XMPP](http://www.xmpp.org) [BOSH](http://www.xmpp.org/extensions/xep-0124.html) bridges the Web to the XMPP protocol and works via [long polling](http://en.wikipedia.org/wiki/Long_polling#Long_polling).  Most of the [XMLHttpRequests](http://en.wikipedia.org/wiki/Xmlhttprequest) contain short XMPP stanzas like the one below (whitespace and formatting added for clarity).
 
-<code><pre>
+<code>
+<pre name='code' class='xml'>
 &lt;body rid='1944468766' 
          xmlns='http://jabber.org/protocol/httpbind' 
          sid='650f4bda7d67c85a8b9ae1378742b370'&gt;
@@ -22,11 +23,13 @@ Web browsers send a lot of HTTP request headers whenever they talk to a Web serv
     &lt;query xmlns='http://jabber.org/protocol/disco#info'/&gt;
   &lt;/iq&gt;
 &lt;/body&gt;
-</pre></code>
+</pre>
+</code>
 
 That's 245 bytes of data.  Here are the request headers sent during this request.
 
-<code><pre>
+<code>
+<pre>
 Host: www.chesspark.com
 User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
@@ -41,7 +44,8 @@ Content-Type: application/xml; charset=UTF-8
 Cookie: sessionid=a7ad697adaf3b501b74b9aa5d215ce7a; __utma=57803256.2324767445786134500.1226380646.1226380646.1226380646.1; __utmb=57803256.2.10.1226380646; __utmc=57803256; __utmz=57803256.1226380646.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
 Pragma: no-cache
 Cache-Control: no-cache
-</pre></code>
+</pre>
+</code>
 
 That's 759 bytes, or over 3 times the amount of actual data.  It's far worse when a blank request is sent, which with BOSH is quite often.  A large chunk of this is the cookie, which unfortunately cannot be eliminated without using a separate domain.  In this particular case that would mean that user friendly features like auto-login would not work.
 

@@ -28,7 +28,8 @@ Combinator adds `mkbranch`, `chbranch`, and `whbranch` commands which create a b
 
 * When `/branches` gets large, Combinator is slow.  This can be fixed by pruning old branches.
 * Combinator enforces a particular repository and working directory structure.  Each project must have a `/trunk`, `/tags`, and `/branches` layout, and the working directories look like:
-<code><pre>
+<code>
+<pre>
 project/
 project/trunk
 project/trunk/...
@@ -37,7 +38,8 @@ project/branches/website-typos-1234/
 project/branches/website-typos-1234/...
 project/branches/other-branch-2345/
 project/branches/other-branch-2345/...
-</pre></code>
+</pre>
+</code>
 Each branched directory must be a copy from `/trunk`.
 * Combinator manipulates `PYTHONPATH`.  It can be good, but it's also doing more than just helping you manage branches.
 * It fails horribly if you put any symlinks in `/trunk`.  Probably won't affect you, but this bites me all the time.
@@ -54,13 +56,15 @@ The tool, warts and all, made branch based development easy enough in Subversion
 [svnmerge](http://www.orcaware.com/svn/wiki/Svnmerge.py) takes a slightly different tactic.  As its file extension implies, it is a self-contained python script.  Like Combinator, it makes branch based development easy, but unlike Combinator it can cherry pick patches and handle repeated merges from trunk to a branch.
 
 You use `svnmerge.py init` to initialize a branch for tracking.  svnmerge uses a few special revision properties to store merge information; this helps it keep track of which revisions are already merged.  It never commits for you, but it does provide a default commit message that you can use if you choose.  For example, to initialize a branch for tracking and merge in the latest changes from trunk:
-<code><pre>
+<code>
+<pre>
 cd /path/to/branch
 svnmerge.py init
 svn commit -F svnmerge-commit-message.txt
 svnmerge.py merge
 svn commit -F svnmerge-commit-message.txt
-</pre></code>
+</pre>
+</code>
 
 You can cherry pick revisions to merge by specifying them as an option to the merge command.
 

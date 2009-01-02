@@ -49,9 +49,11 @@ At Chesspark, the first thing any compatible client must do is send direct prese
 
 This is what it looks like:
 
-<code><pre>
+<code>
+<pre name='code' class='xml'>
     &lt;presence to='login.chesspark.com'/>
-</pre></code>
+</pre>
+</code>
 
 It is simple, but quite effective.
 
@@ -61,7 +63,8 @@ It is often useful to have some information about each member's client or comput
 
 Chesspark collects browser information and screen dimensions as well as the standard client version information.  Here is an example:
 
-<code><pre>
+<code>
+<pre name='code' class='xml'>
     &lt;presence to='login.chesspark.com' from='metajack@chesspark.com/cpc'>
         &lt;client-info xmlns='http://onlinegamegroup.com/xml/chesspark-01'>
             &lt;vender>Chesspark&lt;/vender>
@@ -71,18 +74,21 @@ Chesspark collects browser information and screen dimensions as well as the stan
             <ip>xxx.xxx.xxx.xxx</ip>
         &lt;/client-info>
     &lt;/presence>
-</pre></code>
+</pre>
+</code>
 
 ## Internal Notifications
 
 Internally, the `login.chesspark.com` component publishes all presence changes to the other Chesspark components.  We currently do this just by sending special message stanzas to the other components, but it could also be done with [memcached](http://www.danga.com/memcached/) or some other way.  The way our code is designed, it was trivial to add this new message type and react to it, as opposed to worrying about how to get asynchronous notifications from some other system.
 
-<code><pre>
+<code>
+<pre name='code' class='xml'>
     &lt;message to='arbiter.chesspark.com' from='login.chesspark.com'>
         &lt;member-login xmlns='http://onlinegamegroup.com/xml/chesspark-01' 
                       jid='latency4@chesspark.com/watch_arbiter'/>
     &lt;/message>
-</pre></code>
+</pre>
+</code>
 
 There is also a corresponding `member-logout` message.
 

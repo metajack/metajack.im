@@ -87,7 +87,8 @@ and bits of code, but turned out not to be that hard.
 Here is my `make-remember-frame` code, along with the hooks it needs
 to work.
 
-<code><pre name='code' class='lisp'>
+<code>
+<pre name='code' class='lisp'>
 (defadvice remember-finalize (after delete-remember-frame activate)
   "Advise remember-finalize to close the frame if it is the remember frame"
   (if (equal "remember" (frame-parameter nil 'name))
@@ -109,5 +110,6 @@ to work.
   (make-frame '((name . "remember") (width . 80) (height . 10)))
   (select-frame-by-name "remember")
   (org-remember))
-</pre></code>
+</pre>
+</code>
 

@@ -78,20 +78,23 @@ Any time a player manipulates game state, the request is sent directly to the ar
 
 For example, a player sends arbiter a move request:
 
-<code><pre>
+<code>
+<pre name='code' class='xml'>
     &lt;iq to='arbiter.chesspark.com' from='metajack@chesspark.com/cpc' 
         type='set' id='move1'>
         &lt;game xmlns='http://onlinegamegroup.com/xml/chesspark-01'>
             &lt;move>e2e4&lt;/move>
         &lt;/game>
     &lt;/iq>
-</pre></code>
+</pre>
+</code>
 
 Instead of a `<move/>` element, we might also have `<resign/>`, `<addtime/>`, `<draw/>`, etc.
 
 Arbiter determines whether this move is legal.  Is it our turn?  Is there a piece in this location?  Can that piece be moved to the destination?  If it's legal, arbiter will return an empty result to us, and broadcast the message to the room:
 
-<code><pre>
+<code>
+<pre name='code' class='xml'>
     &lt;iq from='arbiter.chesspark.com' to='metajack@chesspark.com/cpc' 
         type='result' id='move1'/>
     &lt;message from='1234@games.chesspark.com/Arbiter' 
@@ -106,7 +109,8 @@ Arbiter determines whether this move is legal.  Is it our turn?  Is there a piec
             &lt;time control='0' side='white'>1800.0&lt;/time>
         &lt;/game>
     &lt;/message>
-</pre></code>
+</pre>
+</code>
 
 Note that arbiter includes the move number, the ply (or half-move) number, the side, the player name, the move, and the current clock states.  A client can easily detect if this state change is already included in their known state by checking the ply number, and it has all the information it needs to update to the new state and synchronize the clocks.
 

@@ -10,17 +10,21 @@ I recently came across a blog which had excellent code snippets.  They had line 
 
 Here's an example:
 
-<code><pre name='code' class='xml'>
+<code>
+<pre name='code' class='xml'>
 &lt;pre name='code' class='python&gt;
 print "Hello, World!"
 &lt;/pre&gt;
-</pre></code>
+</pre>
+</code>
 
 which produces:
 
-<code><pre name='code' class='python'>
+<code>
+<pre name='code' class='python'>
 print "Hello, World!"
-</pre></code>
+</pre>
+</code>
 
 Now my snippets will have some visual beauty and will hopefully be easier to work with.  For those of you pasting code in your blogs, I highly recommend this.
 
