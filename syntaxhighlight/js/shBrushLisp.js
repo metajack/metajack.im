@@ -9,7 +9,7 @@ dp.sh.Brushes.Lisp = function ()
      css: 'string'},
     {regex: new RegExp("\\b\\d+\\.?\\w*", 'g'),
      css: 'number'},
-    {regex: new RegExp("\(|\)", 'gm'),
+    {regex: new RegExp("\\(|\\)", 'gm'),
      css:'parens'},
     {regex: new RegExp(this.GetKeywords(special), 'gm'),
      css:'special'}];
