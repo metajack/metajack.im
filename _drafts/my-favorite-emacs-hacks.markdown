@@ -4,6 +4,7 @@ tags: [code, emacs]
 extended: ":EXTENDED:"
 ---
 
+* --daemon and emacsclient -t/-c
 * dabbrev
 * go to tag
 * flyspell
