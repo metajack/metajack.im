@@ -16,7 +16,7 @@ regenerates the site.
 Today I spent a little time automating some common actions in
 [Emacs](http://www.gnu.org/software/emacs/) for working with Jekyll
 blogs.  You can find `jekyll.el` in [my Jekyll branch on
-GitHub](http;//github.com/metajack/jekyll/tree/master/emacs/jekyll.el).
+GitHub](http://github.com/metajack/jekyll/tree/master/emacs/jekyll.el).
 
 Here's what it does:
 
