@@ -2,7 +2,7 @@
 layout: post
 title: My Favorite Emacs Hacks
 tags: [code, emacs]
-time: "02:42"
+time: "23:42"
 extended: ":EXTENDED:"
 ---
 
