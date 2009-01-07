@@ -2,7 +2,7 @@
 layout: post
 title: Early Thoughts on the Upcoming XMPP Book
 tags: [xmpp, jabber]
-time: "11:50"
+time: "23:50"
 extended: ":EXTENDED:"
 ---
 
