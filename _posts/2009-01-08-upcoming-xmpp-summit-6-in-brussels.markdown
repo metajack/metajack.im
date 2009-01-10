@@ -10,7 +10,7 @@ It's a new year, and that means new travels and conferences.  Here's
 where I'll be if you'd like to get together and talk shop.
 
 * On **January 13th** I'll be in San Francisco at [SF
-  Beta](http://sfbeta.com) to demo [StanzIQ](http;//stanziq.com) and
+  Beta](http://sfbeta.com) to demo [StanzIQ](http://stanziq.com) and
   other cool XMPP based things.  The event is at 111 Minna from 5-9PM.
 * From **February 6th to 9th** I will be at the [6th XMPP
   Summit](http://xmpp.org/summit/summit6.shtml) in Brussels, Belgium.
