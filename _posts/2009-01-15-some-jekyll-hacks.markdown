@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Some Jekyll Hacks
-tags: [jekyll, ruby, code]]
+tags: [jekyll, ruby, code]
 time: "21:20"
 extended: ":EXTENDED:"
 ---
