@@ -2,7 +2,7 @@
 layout: post
 title: We Don't Need No Stinkin' Web Frameworks
 tags: [xmpp, jabber, web]
-time: "00:00"
+time: "23:06"
 extended: ":EXTENDED:"
 ---
 
