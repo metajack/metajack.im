@@ -19,4 +19,4 @@ or
 > a **folio** of stanzas
 
 See [Wikipedia](http://www.wikipedia.org) for the meanings of
-[octavo](http://en.wikipedia.org/wiki/Octavo_(book)) and [folio](http://en.wikipedia.org/wiki/Folio). Personally, I like the former.  What about you?
+[octavo](http://en.wikipedia.org/wiki/Octavo_(book\)) and [folio](http://en.wikipedia.org/wiki/Folio). Personally, I like the former.  What about you?
