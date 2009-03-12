@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strophe in Action: Drop.io's Awesome XMPP Powered App
+title: "Strophe in Action: Drop.io's Awesome XMPP Powered App"
 tags: [xmpp, jabber, strophe, javascript, dropio]
 time: "16:19"
 extended: ":EXTENDED:"
