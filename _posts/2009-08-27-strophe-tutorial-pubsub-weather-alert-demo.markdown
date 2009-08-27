@@ -16,7 +16,7 @@ just stop with the demo, either; he has provided a [detailed
 walk-through](http://rfid-ale.blogspot.com/2009/08/xmpp-web-project-walkthrough.html)
 of how it all works as well.
 
-<img src='http://2.bp.blogspot.com/_g8j9lnJYYcE/So5BGOPdFcI/AAAAAAAABJc/FVDMyROR_NI/s1600-h/Picture+2.png' width='400' alt='Weather Demo Screenshoot'/>
+<img src='/images/weazard.png' width='400' alt='Weather Demo Screenshoot'/>
 
 The demo is an imaginary system for weather alerting that allows users
 to subscribe to various weather stations and receive updates in
