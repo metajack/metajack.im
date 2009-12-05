@@ -22,6 +22,8 @@ title: metajack.im - a blog about startups and code
     <li><time datetime='{{ rpost.date | date:getutc:"%Y-%m-%dT%H:%M:%SZ" }}'>{{ rpost.date | date:"%m-%d" }}</time> <a href="{{ rpost.url }}">{{ rpost.title }}</a></li>
     {% endfor %}
   </ol>
+
+  <p class='archive'>Browse the <a href='/archive/'>archive</a>.</p>
 </aside>
 
 
