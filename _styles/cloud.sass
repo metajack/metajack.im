@@ -1,0 +1,69 @@
+=cloud_link(!color, !hover_color)
+  a
+    color= !color
+
+    &:hover
+      color= !hover_color
+
+=cloud(!small, !big, !link_color)
+  ul
+    text-align: justify
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      display: inline
+      line-height: 0.9em
+
+      !delta = (!big - !small) / 9
+
+      &.cloud-rank-1
+        font-size= !big
+                
+        +cloud_link(#000, !link_color)
+
+      &.cloud-rank-2
+        font-size= !big - !delta
+
+        +cloud_link(#111, !link_color)
+
+      &.cloud-rank-3
+        font-size= !big - (2 * !delta)
+
+        +cloud_link(#222, !link_color)
+
+      &.cloud-rank-4
+        font-size= !big - (3 * !delta)
+
+        +cloud_link(#333, !link_color)
+
+      &.cloud-rank-5
+        font-size= !big - (4 * !delta)
+
+        +cloud_link(#444, !link_color)
+
+      &.cloud-rank-6
+        font-size= !big - (5 * !delta)
+
+        +cloud_link(#555, !link_color)
+
+      &.cloud-rank-7
+        font-size= !big - (6 * !delta)
+
+        +cloud_link(#666, !link_color)
+
+      &.cloud-rank-8
+        font-size= !big - (7 * !delta)
+
+        +cloud_link(#777, !link_color)
+
+      &.cloud-rank-9
+        font-size= !big - (8 * !delta)
+
+        +cloud_link(#888, !link_color)
+
+      &.cloud-rank-10
+        font-size= !small
+
+        +cloud_link(#999, !link_color)

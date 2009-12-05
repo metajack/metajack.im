@@ -1,33 +1,43 @@
-<div class='entry'>
-  <h1 class='title'><a href='{{ post.url }}'>{{ post.title }}</a></h1>
-  <div class='byline'>{{ post.date | date:"%B %d, %Y @ %H:%M" }}</div>
-  <div class='body'>
+<article>
+  <header>
+    <h1 class='entry-title'>
+      <a href='{{ post.url }}'>{{ post.title }}</a>
+    </h1>
+    <time datetime='{{ post.date | date.getutc:"%Y-%m-%dT%H:%M:00Z" }}' class='entry-time'>{{ post.date | date:"%B %d, %Y @ %H:%M" }}</time>
+  </header>
+  
+  <section class='body'>
     {% if hide_extended %}
       {{ post.content }}
-      {% if post.extended.size > 0 %}
-      <p>Continue reading at <a href='{{ post.url }}'>{{ post.title }}</a>.</p>
-      {% endif %}
     {% else %}
       {{ post.content }}
       {{ post.extended }}
     {% endif %}
-  </div>
-  <div class='footer'>
-    <div class='comments'>
-    </div>
-    <div class='tags'>
-      <span>
-	tags:
-	{% for t in post.tags %}
-	<a href='http://www.google.com/search?q={{ t | escape }}+site:metajack.im'>{{ t }}</a>{% if forloop.last == false %}, {% endif %}
-	{% endfor %}
-      </span>
-    </div>
+  </section>
+
+  <footer>
+    {% if show_comments %}
     <div class='comments'>
       <span>
 	comments: 
 	<a href='{{ post.url }}#disqus_thread'>View Comments</a>
       </span>
     </div>
-  </div>
-</div>
+    {% endif %}
+
+    <div class='tags'>
+      tags:
+      <ul>
+	{% for t in post.tags %}
+	<li><a href='http://www.google.com/search?q={{ t | escape }}+site:metajack.im'>{{ t }}</a>{% if forloop.last == false %}, {% endif %}</li>
+	{% endfor %}
+      </ul>
+    </div>
+
+    {% if hide_extended %}
+    <p class='read-more'>
+      Continue reading at <a href='{{ post.url }}'>{{ post.title }}</a>.
+    </p>
+    {% endif %}
+  </footer>
+</article>

@@ -4,39 +4,32 @@ scripts:
     name: cloud
     command: generate_cloud.py 50 10
 ---
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html>
 
-  <link rel="stylesheet" href="/styles.css" 
-	type="text/css" />
-  <link rel="start" href="http://metajack.im/" 
-	title="Home" />
-  <link rel="alternate" type="application/atom+xml" 
-	title="Recent Entries" href="http://feeds.feedburner.com/metajack" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
 
-  <link type="text/css" rel="stylesheet" 
-	href="/syntaxhighlight/css/SyntaxHighlighter.css" />
-  <script language="javascript" type='text/javascript' 
-	  src="/syntaxhighlight/js/shCore.js"></script>
-  <script language="javascript" type='text/javascript'
-	  src="/syntaxhighlight/js/shBrushCpp.js"></script>
-  <script language="javascript" type='text/javascript'
-	  src="/syntaxhighlight/js/shBrushCss.js"></script>
-  <script language="javascript" type='text/javascript'
-	  src="/syntaxhighlight/js/shBrushJScript.js"></script>
-  <script language="javascript" type='text/javascript'
-	  src="/syntaxhighlight/js/shBrushPython.js"></script>
-  <script language="javascript" type='text/javascript'
-	  src="/syntaxhighlight/js/shBrushSql.js"></script>
-  <script language="javascript" type='text/javascript'
-	  src="/syntaxhighlight/js/shBrushXml.js"></script>
-  <script language="javascript" type='text/javascript'
-	  src="/syntaxhighlight/js/shBrushLisp.js"></script>
+    <link rel='stylesheet' href='/styles.css'>
 
-  <!--
+    <link rel="start" href="http://metajack.im/" title="Home">
+    <link rel="alternate" type="application/atom+xml" 
+	  title="Recent Entries"
+          href="http://feeds.feedburner.com/metajack">
+
+    <link rel="stylesheet" 
+          href="/syntaxhighlight/css/SyntaxHighlighter.css">
+    <script src="/syntaxhighlight/js/shCore.js"></script>
+    <script src="/syntaxhighlight/js/shBrushCpp.js"></script>
+    <script src="/syntaxhighlight/js/shBrushCss.js"></script>
+    <script src="/syntaxhighlight/js/shBrushJScript.js"></script>
+    <script src="/syntaxhighlight/js/shBrushPython.js"></script>
+    <script src="/syntaxhighlight/js/shBrushSql.js"></script>
+    <script src="/syntaxhighlight/js/shBrushXml.js"></script>
+    <script src="/syntaxhighlight/js/shBrushLisp.js"></script>
+
+    <!--
       <rdf:RDF xmlns="http://web.resource.org/cc/"
                xmlns:dc="http://purl.org/dc/elements/1.1/"
 	       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -48,108 +41,142 @@ scripts:
 	<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
 	</License>
       </rdf:RDF>
-  -->
+    -->
 
-  <title>{{ page.title }}</title>
-</head>
-<body>
-  <div id="sidebar">
-    <div id="header">
-      <h1 id="header-name">
-	<a href="http://metajack.im/">meta<span>jack</span>.im</a>
-      </h1>
-      <h2 id="header-description">
-	a blog about <b>startups</b> and <b>code</b>
-      </h2>
-      <h3 id="header-byline">
-	by <a href="http://metajack.im/about/">jack moffitt</a>
-      </h3>
-    </div>
- 
-    <hr id="header-break" />
+    <!-- IE HTML5 workaround -->
+    <script>
+      <!--
+         function fixElem(name) {
+           document.createElement(name);
+         }
 
-    <div class="syndication widget">
-      <a href="http://feeds.feedburner.com/metajack" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="feed icon" style="border: 0"/></a>
-      <a href="http://feeds.feedburner.com/metajack" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">Subscribe</a>
-    </div>
+         fixElem('header');
+         fixElem('aside');
+         fixElem('section');
+         fixElem('article');
+         fixElem('time');
+         fixElem('footer');
+      // -->
+    </script>
 
-    <div class='cloud widget'>
-      {{ cloud }}
-    </div>
+    {% if post %}
+    <script>
+      <!--
+         var disqus_url = 'http://metajack.im{{ post.url }}';
+         // -->
+    </script>
+    {% endif %}
+  </head>
 
-    <div class="search widget">
-      <form method="get" action="http://www.google.com/search">
-	<div>
-	  <input type="text" id="search" class="ti" name="q" value="" />
-	  <input type="hidden" name="q" value="site:metajack.im" />
-	  <input type="submit" value="Search" />
-	</div>
-      </form>
-    </div>
+  <body>
 
-    <div class="recent-entries widget">
-      <h3>Recent Entries</h3>
-      <ul>
-	{% for rpost in site.posts limit:20 %}
-	<li><a href="{{ rpost.url }}">{{ rpost.title }}</a></li>
-	{% endfor %}
-      </ul>
-    </div>
-    
-    <div class='archive widget'>
-      <a href="/archive/">Archives</a>
-    </div>
-  </div>
-  
-  
-  <div id="content">
-    <div id="content-spacer"></div>
-    
-    {{ content }}
+    <header class='page-header'>
+      <a href='/'>meta<span>jack</span>.im</a>
+    </header>
 
+    <section class='page-body'>
+      {{ content }}
 
-  </div>
-    
-  <div class="clear"></div>
-  <div id="footer">
-  
-    this blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">creative commons license</a>
-    
-  </div>
+      <aside class='cloud'>
+        <header>
+          <h1>See more posts about</h1>
+        </header>
 
-  <script type='text/javascript'>
-    //<![CDATA[
-    dp.SyntaxHighlighter.ClipboardSwf = '/syntaxhighlight/flash/clipboard.swf';
-    dp.SyntaxHighlighter.HighlightAll('code');
-    //]]>
-  </script>
+        {{ cloud }}
+      </aside>
 
-  <script type="text/javascript">
-    //<![CDATA[
-      (function() {
-        var links = document.getElementsByTagName('a');
+      <aside class='book-promo'>
+        <header>
+          <h1>Buy my book</h1>
+        </header>
+
+        <p>
+          <a href='http://www.amazon.com/gp/product/0470540710?tag=metajack-20'>
+            <img src='/images/profxmpp_cover.jpg' width='100' height='125'
+                 alt='Book cover of Professional XMPP Programming'>
+          </a>
+          Buy my book, <a href='http://professionalxmpp.com'>Professional XMPP Programming with JavaScript and
+          jQuery</a>, from <a href='http://www.amazon.com/gp/product/0470540710?tag=metajack-20'>Amazon US</a> or <a href='http://www.amazon.co.uk/gp/product/0470540710?tag=metajack-20'>Amazon UK</a> to learn more about developing awesome XMPP
+          applications.
+        </p>
+      </aside>
+
+      {% unless page.title contains 'about jack moffitt' %}
+      <aside class='author-bio'>
+        <header>
+          <h1>About the author</h1>
+        </header>
+
+        <p>
+          <img src='/images/jack.jpg' width='100' height='100'
+               alt='Picture of Jack Moffitt'>
+          
+          I'm a hacker and entrepreneur based in Albuquerque, New
+          Mexico. I have founded several startups built on <a href='http://xmpp.org'>XMPP</a>
+          technology including <a href='http://collecta.com'>Collecta</a>, a real-time search engine for
+          the Web, and <a href='http://chesspark.com'>Chesspark</a>, a real-time, multi-user gaming
+          platform. You can learn more about me on the <a href='/about/'>about page</a>.
+        </p>
+
+        <p>
+          Follow <a href='http://twitter.com/metajack'>@metajack</a> on <a href='http://twitter.com/metajack'>Twitter</a> or <a href='http://identi.ca/metajack'>Identica</a>, or contact me at jack at metajack.im.
+        </p>
+      </aside>
+      {% endunless %}
+    </section>
+
+    <footer>
+      <p>
+        <a href='http://feeds.feedburner.com/metajack'>
+          <img src='/images/feed-icon-16x16.png' width='16' height='16'
+               alt='Feed icon'>
+
+          subscribe to this blog
+        </a>
+      </p>
+
+      <p>
+        copyright &copy; 2007-9 Jack Moffitt and licensed under the
+        <a href='http://creativecommons.org/licenses/by-sa/3.0/us/'>creative
+          commons attribution-share alike license</a>
+      </p>
+    </footer>
+
+    <a href='#site-info' class='site-info'>more info</a>
+      
+    <script>
+      <!--
+         dp.SyntaxHighlighter.ClipboardSwf = '/syntaxhighlight/flash/clipboard.swf';
+         dp.SyntaxHighlighter.HighlightAll('code');
+      // -->
+    </script>
+
+    <script>
+      <!--
+         (function() {
+	var links = document.getElementsByTagName('a');
 	var query = '?';
-        for(var i = 0; i < links.length; i++) {
+	for(var i = 0; i < links.length; i++) {
 	  if(links[i].href.indexOf('#disqus_thread') >= 0) {
 	    query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
 	  }
 	}
-	document.write('<script type="text/javascript" src="http://disqus.com/forums/metajack/get_num_replies.js' + query + '"></' + 'script>');
-      })();
-    //]]>
-  </script>
-
-
-  <script type="text/javascript">
-    /* <![CDATA[ */
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/metajack/get_num_replies.js' + query + '"></' + 'script>');
+})();
+         // -->
     </script>
-    <script type="text/javascript">
-    var pageTracker = _gat._getTracker("UA-5488219-1");
-    pageTracker._trackPageview();
-    /* ]]> */
-  </script>
-  
-</body>
+
+    <script>
+      <!--
+         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+         // -->
+    </script>
+    <script>
+      <!--
+         var pageTracker = _gat._getTracker("UA-5488219-1");
+         pageTracker._trackPageview();
+         // -->
+    </script>
+    </body>
 </html>

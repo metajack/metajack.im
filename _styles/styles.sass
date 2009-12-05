@@ -1,0 +1,193 @@
+@import cloud.sass
+
+!link_color = #4a75b5
+
+=debug(!color = "black")
+  border= "solid" 1px !color
+
+=left-floated-image
+  p
+    padding: 0 0.25em 0 0
+
+  img
+    float: left
+    margin: 0 1em 1em 0
+    border: solid 4px #ccc
+
+body
+  font-family: Arial, Helvetica, sans-serif
+  margin: 0
+  padding: 0
+
+
+header, section, article, aside, footer
+  display: block
+
+
+h1
+  font-weight: bold
+  font-size: 3em
+  margin: 0.1em 0
+
+
+a
+  color= !link_color
+  text-decoration: none
+
+  &:hover
+    color= !link_color
+    text-decoration: underline
+
+
+p
+  line-height: 1.4em
+
+blockquote
+  font-size: 0.9em
+  border-left: solid 0.5em #eee
+  margin-left: 1em
+  padding-left: 1em
+
+
+header.page-header
+  margin: 0
+  padding: 0.4em
+  font-weight: bold
+  font-size: 2em
+  letter-spacing: -0.1em
+  color: #777
+  text-align: right
+  background-color: #ccc
+  position: fixed
+  top: 0
+  right: 0
+  opacity: 0.5
+  z-index: 1
+  width: 100%
+
+  a
+    text-decoration: none
+    color: #444
+    text-shadow: 1px 1px 1px #777
+
+    &:hover
+      text-decoration: none
+
+    span
+      color: #000
+
+
+section.page-body
+  padding: 1em
+  width: 38em
+  margin: 4em auto 0 auto
+
+  article
+    padding-bottom: 2em
+
+    header
+      margin-bottom: 2em
+
+      time
+        display: block
+        text-align: right
+        color: #999
+        font-size: 1.2em
+        padding-bottom: 0.75em
+
+    footer
+      text-align: right
+      margin: 0
+      padding: 0
+
+      .read-more
+        font-size: 0.8em
+        text-transform: uppercase
+
+      .comments
+        font-size: 0.8em
+
+      .tags
+        font-size: 0.8em
+  
+        ul
+          margin: 0
+          padding: 0
+          display: inline
+          list-style: none
+ 
+          li
+            margin: 0
+            padding: 0
+            display: inline
+        
+
+div.page-break
+  border-top: solid 2px #ccc
+
+
+aside
+  header
+    text-transform: uppercase
+    margin-bottom: 0.5em
+
+    h1
+      font-size: 1.2em
+
+aside.recent-posts
+  padding: 1em 0
+
+  ol
+    list-style: none
+    margin: 0
+    padding: 0
+   
+
+aside.cloud
+  float: left
+  width: 18em
+  padding: 1em 1em 1em 0
+
+  +cloud(0.4em, 1.4em, !link_color)
+
+
+aside.book-promo
+  float: right
+  width: 18em
+  padding: 1em 0 1em 1em
+
+  +left-floated-image
+
+aside.author-bio
+  padding-top: 1em
+  clear: both
+
+  +left-floated-image
+
+footer
+  width: 38em
+  padding: 1em
+  margin: 0 auto
+  color: #aaa
+  clear: both
+  text-align: center
+
+  p
+    font-size: 0.75em
+
+  img
+    border: none
+    padding-right: 0.5em
+    vertical-align: middle
+
+a.site-info
+  padding: 0.5em 1em
+  position: fixed
+  bottom: 0
+  right: 0
+  background-color: #c99
+  color: #fff
+  opacity: 0.5
+
+  &:hover
+    opacity: 1.0

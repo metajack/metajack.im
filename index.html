@@ -4,7 +4,24 @@ title: metajack.im - a blog about startups and code
 ---
 
 {% assign hide_extended = true %}
+{% assign show_comments = true %}
 
-{% for post in site.posts limit:10 %}
+{% for post in site.posts limit:1 %}
 {% include post.html %}
 {% endfor %}
+
+{% include break.html %}
+
+<aside class='recent-posts'>
+  <header>
+    <h1>Recently</h1>
+  </header>
+  
+  <ol>
+    {% for rpost in site.posts limit:5 offset:1 %}
+    <li><time datetime='{{ rpost.date | date:getutc:"%Y-%m-%dT%H:%M:%SZ" }}'>{{ rpost.date | date:"%m-%d" }}</time> <a href="{{ rpost.url }}">{{ rpost.title }}</a></li>
+    {% endfor %}
+  </ol>
+</aside>
+
+
