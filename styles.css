@@ -40,6 +40,7 @@ header.page-header {
   top: 0;
   right: 0;
   opacity: 0.5;
+  filter: alpha(opacity = 50);
   z-index: 1;
   width: 100%; }
   header.page-header a {
@@ -52,9 +53,9 @@ header.page-header {
       color: #000; }
 
 section.page-body {
-  padding: 1em;
+  padding: 4.5em 1em 1em 1em;
   width: 38em;
-  margin: 4em auto 0 auto; }
+  margin: 0 auto; }
   section.page-body article {
     padding-bottom: 2em; }
     section.page-body article header {
@@ -222,6 +223,7 @@ a.site-info {
   right: 0;
   background-color: #c99;
   color: #fff;
-  opacity: 0.5; }
+  opacity: 0.5;
+  filter: alpha(opacity = 50); }
   a.site-info:hover {
     opacity: 1.0; }
