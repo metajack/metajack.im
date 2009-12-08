@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strophe.js Release Candidate; Release Imminent
-tags: [strophe, xmpp, jabber, javascript, book]]
+tags: [strophe, xmpp, jabber, javascript, book]
 time: "15:07"
 extended: ":EXTENDED:"
 ---
