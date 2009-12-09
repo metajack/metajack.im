@@ -3,7 +3,7 @@
     <h1 class='entry-title'>
       <a href='{{ post.url }}'>{{ post.title }}</a>
     </h1>
-    <time datetime='{{ post.date | date.getutc:"%Y-%m-%dT%H:%M:00Z" }}' class='entry-time'>{{ post.date | date:"%B %d, %Y @ %H:%M" }}</time>
+    <time datetime='{{ post.date | date_to_utc | date:"%Y-%m-%dT%H:%M:00Z" }}' class='entry-time'>{{ post.date | date:"%B %d, %Y @ %H:%M" }}</time>
   </header>
   
   <section class='body'>

@@ -20,14 +20,6 @@ scripts:
 
     <link rel="stylesheet" 
           href="/syntaxhighlight/css/SyntaxHighlighter.css">
-    <script src="/syntaxhighlight/js/shCore.js"></script>
-    <script src="/syntaxhighlight/js/shBrushCpp.js"></script>
-    <script src="/syntaxhighlight/js/shBrushCss.js"></script>
-    <script src="/syntaxhighlight/js/shBrushJScript.js"></script>
-    <script src="/syntaxhighlight/js/shBrushPython.js"></script>
-    <script src="/syntaxhighlight/js/shBrushSql.js"></script>
-    <script src="/syntaxhighlight/js/shBrushXml.js"></script>
-    <script src="/syntaxhighlight/js/shBrushLisp.js"></script>
 
     <!--
       <rdf:RDF xmlns="http://web.resource.org/cc/"
@@ -144,10 +136,23 @@ scripts:
 
     <a href='#site-info' class='site-info'>more info</a>
       
+    <script src='/LABjs/LAB.min.js'></script>
     <script>
       <!--
-         dp.SyntaxHighlighter.ClipboardSwf = '/syntaxhighlight/flash/clipboard.swf';
-         dp.SyntaxHighlighter.HighlightAll('code');
+         $LAB
+           .setOptions({BasePath: '/syntaxhighlight/js/'})
+           .script('shCore.js',
+                   'shBrushCpp.js',
+                   'shBrushCss.js',
+                   'shBrushJScript.js',
+                   'shBrushPython.js',
+                   'shBrushSql.js',
+                   'shBrushXml.js',
+                   'shBrushLisp.js')
+           .wait(function () {
+             dp.SyntaxHighlighter.ClipboardSwf = '/syntaxhighlight/flash/clipboard.swf';
+             dp.SyntaxHighlighter.HighlightAll('code');
+           });
       // -->
     </script>
 
@@ -161,22 +166,24 @@ scripts:
 	    query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
 	  }
 	}
-	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/metajack/get_num_replies.js' + query + '"></' + 'script>');
+	$LAB.script('http://disqus.com/forums/metajack/get_num_replies.js' + query);
 })();
          // -->
     </script>
 
     <script>
       <!--
-         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-5488219-1']);
+         _gaq.push(['_trackPageview']);
+
+         (function() {
+           var ga = document.createElement('script');
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           ga.setAttribute('async', 'true');
+           document.documentElement.firstChild.appendChild(ga);
+         })();
          // -->
     </script>
-    <script>
-      <!--
-         var pageTracker = _gat._getTracker("UA-5488219-1");
-         pageTracker._trackPageview();
-         // -->
-    </script>
-    </body>
+  </body>
 </html>

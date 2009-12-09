@@ -19,7 +19,7 @@ title: metajack.im - a blog about startups and code
   
   <ol>
     {% for rpost in site.posts limit:5 offset:1 %}
-    <li><time datetime='{{ rpost.date | date:getutc:"%Y-%m-%dT%H:%M:%SZ" }}'>{{ rpost.date | date:"%m-%d" }}</time> <a href="{{ rpost.url }}">{{ rpost.title }}</a></li>
+    <li><time datetime='{{ rpost.date | date_to_utc | date:"%Y-%m-%dT%H:%M:%SZ" }}'>{{ rpost.date | date:"%m-%d" }}</time> <a href="{{ rpost.url }}">{{ rpost.title }}</a></li>
     {% endfor %}
   </ol>
 
