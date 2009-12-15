@@ -73,7 +73,7 @@ as opposed to financially.
 
 Indexing at Collecta is there to provide historical context; it is
 only part of our search technology. Our real-time technology is
-powered by streaming (using [XMPP](http://www.xmpp.org), not
+powered by streaming (using [XMPP](http://www.xmpp.org)), not
 indices. As far as I'm aware, we are the only real-time company that
 is not based on indexing systems, and that fact probably explains why
 our search results appear in fractions of a second after, not minutes
