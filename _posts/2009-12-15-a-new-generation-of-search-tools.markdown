@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A New Generation of Search Tools
-tags: [riak, dynamo, solr, lucene, sphinx]
+tags: [riak, dynamo, solr, lucene, sphinx, couchdb]
 time: "09:38"
 extended: ":EXTENDED:"
 ---
@@ -87,7 +87,7 @@ traditional indexing systems fall well short of our needs.
 We need something better.
 
 I've been following the NoSQL community for some time. Collecta was an
-early adopter of CouchDB and an early customer of
+early adopter of [CouchDB](http://www.couchdb.org) and an early customer of
 [Cloudant](http://www.cloudant.com). Earlier this year, I began to
 plan for the development of a new indexing system to better meet our
 needs. That's about the time I first met [Justin
