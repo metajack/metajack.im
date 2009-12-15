@@ -38,7 +38,7 @@ a new document being available for searching is a day. This may work
 for many applications, but most users will expect new content to be
 searchable immediately.
 
-[Solr](http://lucene.apache.org/solr/) has sophisticated replicationg
+[Solr](http://lucene.apache.org/solr/) has sophisticated replication
 and index merging, but it doesn't fare very well either for high
 volume updates.  There is a significant lag between the time a
 document is sent to the indexer and the time the index reflects this
@@ -79,7 +79,7 @@ is not based on indexing systems, and that fact probably explains why
 our search results appear in fractions of a second after, not minutes
 after, content is published.
 
-Oour users would not be impressed if the results page showed them
+Our users would not be impressed if the results page showed them
 nothing until the next time someone mentioned their query term, so we
 store a historical archive and index it for queries. Unfortunately, the
 traditional indexing systems fall well short of our needs.
