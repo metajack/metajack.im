@@ -20,7 +20,7 @@ Search](http://www.basho.com/riaksearch.html).
 
 Software like Lucene, Solr, and Sphinx are optimized for class of
 problems that doesn't always match up to an application's
-requirements. The work very well when the document set they index
+requirements. They work very well when the document set they index
 doesn't change very much or very often. Adding new documents to the
 system is expensive. They have highly sophisticated on-disk data
 structures that provide high query performance at the cost of
