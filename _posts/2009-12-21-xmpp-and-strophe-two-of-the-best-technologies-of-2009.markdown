@@ -21,11 +21,15 @@ say](http://news.ycombinator.com/item?id=1006060) about it:
   client was clearly suitable to be delivered as a web app. On the
   server side, we already had a realtime graphics system I had written
   earlier, to which the web clients would need to talk over a
-  bidirectional connection with near-realtime responsiveness.  > ...
+  bidirectional connection with near-realtime responsiveness.  
+>
+> ...
+>
 > [My work partner] showed me some demos of realtime XMPP web apps
   built with Strophe.js, and I was rather impressed. Then we went over
   our system's client/server design and how it would map to XMPP, and
   I was sold.
+>
 > We ended up using many more XMPP features than I had
   initially imagined, including publish/subscribe and multi-user chat
   rooms. Had we gone with my original approach, these concepts would
