@@ -92,7 +92,7 @@ There are many books on XMPP and I chose one of the ones on
 O'Reilly's Safari.  It helps me a great deal breaking down the 3 main
 types of packets that are sent on XMPP.
 
-[The book Elijah references here is [XMPP: The Definitive Guide](http://www.amazon.com/dp/059652126X?tag=metajack-20).]
+<small>(The book Elijah references here is [XMPP: The Definitive Guide](http://www.amazon.com/dp/059652126X?tag=metajack-20).)</small>
 
 One bit that caused a little trouble was finding the most reliable
 XMPP server.  We went with Erlang's ejabberd and the hard part was
