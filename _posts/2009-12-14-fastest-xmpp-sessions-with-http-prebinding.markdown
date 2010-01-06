@@ -46,7 +46,7 @@ waiting as soon as the JavaScript code starts executing.
 
 Today, we've made our own
 [Mod-Http-Pre-Bind](http://github.com/thepug/Mod-Http-Pre-Bind) code
-available, and I've written a [small example](http://github.com/metajack/strophejs/examples/prebind.js) for using this with
+available, and I've written a [small example](http://github.com/metajack/strophejs/raw/master/examples/prebind.js) for using this with
 [Strophe.js](http://code.stanziq.com/strophe).  I'll go over the
 salient parts of this example in the rest of this post.
 
