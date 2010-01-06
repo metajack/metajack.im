@@ -132,7 +132,7 @@ process as our situation is a bit different from a chatting program -
 having cabbies verify passengers as OK to see them wouldn't make
 sense, since cabbies want to be seen (and hailed!)
 
-Elijah: So we had to trim down the roster specification and ended up making
+So we had to trim down the roster specification and ended up making
 adding to to a roster a one-way, instant process.  Once you add
 someone, you can see their online status and their location.
 
