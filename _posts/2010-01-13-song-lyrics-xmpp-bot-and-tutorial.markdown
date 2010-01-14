@@ -7,10 +7,10 @@ extended: ":EXTENDED:"
 ---
 
 There is a new XMPP bot in town, which delivers song lyrics right to
-your IM client. [Ahbi](http://abhinavsingh.com/) has written a song
+your IM client. [Abhi](http://abhinavsingh.com/) has written a song
 lyrics bot ([lyricsfly@gtalkbots.com](xmpp:lyricsfly@gtalkbots.com)
 and [shared the design
-details](blog/2010/01/get-lyrics-for-any-song-using-xmpp-and-php-right-into-your-im-add-lyricsflygtalkbots-com/)
+details](http://abhinavsingh.com/blog/2010/01/get-lyrics-for-any-song-using-xmpp-and-php-right-into-your-im-add-lyricsflygtalkbots-com/)
 on his blog.
 
 He wrote the bot in PHP using the
@@ -19,7 +19,7 @@ though he is the author of the library as well. It will be good for
 [XMPPHP](http://code.google.com/p/xmpphp/) to have a little
 competition.
 
-At the end of his post, Ahbi also has a short tutorial for writing
+At the end of his post, Abhi also has a short tutorial for writing
 your own XMPP bots with JAXL.
 
 You might also want to check out his other PHP and JAXL posts:
