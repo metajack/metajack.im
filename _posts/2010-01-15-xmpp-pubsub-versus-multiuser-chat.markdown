@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XMPP Questions Answered: Pubsub versus Multi-User Chat
+title: "XMPP Questions Answered: Pubsub versus Multi-User Chat"
 tags: [xmpp, jabber, pubsub, muc]
 time: "22:28"
 extended: ":EXTENDED:"
