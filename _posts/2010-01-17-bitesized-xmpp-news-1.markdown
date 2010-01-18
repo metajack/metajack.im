@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bite-sized XMPP News #1
+title: "Bite-sized XMPP News #1"
 tags: [twitter, jabber, xmpp, identica]
 time: "21:27"
 extended: ":EXTENDED:"
