@@ -1,0 +1,51 @@
+---
+layout: post
+title: Serve on One of the New XSF Teams
+tags: [xmpp, jabber, xsf]
+time: "01:00"
+extended: ":EXTENDED:"
+---
+
+One of the big changes the [XMPP Standards Foundation
+(XSF)](http://xmpp.org) has made recently is to create special
+[teams](http://xmpp.org/xsf/teams/) that are in charge of handling
+various internal tasks. Each member is expected to serve on at least
+one of these teams, and by spreading the work load among a group of
+interested individuals, more work gets done.
+
+Currently there are three of these teams, one each for
+[communication](http://xmpp.org/xsf/teams/communication/), [technical review](http://xmpp.org/xsf/teams/techreview/), and [infrastructure](http://xmpp.org/xsf/teams/infrastructure/).
+
+The communications team is charged with maintaining the XSF
+[wiki](http://wiki.xmpp.org) and [web site](http://xmpp.org),
+keeping updates flowing on the [blog](http://blog.xmpp.org), producing
+presentations, tutorials, and other guides for the XMPP community, and
+editorial reviews of
+[extensions](http://xmpp.org/extensions/). Currently the most effort
+has been focused on writing and reviewing blog posts.
+
+The infrastructure team handles the machines and software that power the
+[xmpp.org](http://xmpp.org) services. There are a lot of moving parts,
+and this team does an excellent job of keeping them well oiled. Most
+of the work of this team is usually invisible, but it's important to
+remember their important efforts even when we can't see them.
+
+The technical review team evaluates extensions at each stage of their
+progress and provides advice to the [XSF
+Council](http://xmpp.org/council/) and others. It is extremely helpful
+to have a wide range of people reviewing each extension, but it is
+easy for less popular extensions to fall through the cracks. The idea
+behind the technical review team is to make sure that there is a
+minimum coverage level for everything, hopefully improving the quality
+of XMPP extensions even further.
+
+It's great to see the XSF get more organized; it is a sign of the
+growth of XMPP and the maturation of the XSF.
+
+I just noticed that I have yet to sign up for one of these teams
+officially. Hopefully the technical review team and the communications
+teams will have me. If you are an XSF member, I encourage you to
+volunteer for one of these teams; many hands make light work. If you
+are not an XSF member, the XSF is [currently accepting membership
+applications](http://wiki.xmpp.org/web/Membership_Applications_January_2010)
+until the end of the month for the upcoming election.
