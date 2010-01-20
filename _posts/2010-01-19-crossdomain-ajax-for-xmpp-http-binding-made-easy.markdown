@@ -32,7 +32,7 @@ connection managers. The implementation is so trivial, I was able to
 quickly develop patches for both [ejabberd](http://www.ejabberd.im)
 (patch in [bug EJAB-1168](https://support.process-one.net/browse/EJAB-1168))
 and [Punjab](http://code.stanziq.com/punjab) (patch in [bug
-#26](http://code.stanziq.com/punjab/ticket/26)).
+\#26](http://code.stanziq.com/punjab/ticket/26)).
 
 The BOSH connection manager I run as a testing service at
 [http://bosh.metajack.im:5280/xmpp-httpbind](http://bosh.metajack.im:5280/xmpp-httpbind)
