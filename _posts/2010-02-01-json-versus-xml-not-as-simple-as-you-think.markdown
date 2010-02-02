@@ -13,6 +13,8 @@ problems, this is a reasonable thing to do. JSON and XML have many
 similar properties, but XML has some tricks up its sleeve that JSON
 can't yet match.
 
+:EXTENDED:
+
 ## JSON's Charms
 
 One of the main charms of JSON is its terse syntax. XML elements must
