@@ -123,8 +123,8 @@ For that matter, does XBox 360 use MSN or something custom?
 
 > [peterneubauer](http://twitter.com/peterneubauer): Project #gargamel
 > is starting. Distributed #graph processing on #xmpp, #gremlin and
-> #linkedprocess. On #rdf, #neo4j, #sail,
-> #linkeddata. [*](http://twitter.com/peterneubauer/status/8405566771)
+> \#linkedprocess. On #rdf, #neo4j, #sail,
+> \#linkeddata. [*](http://twitter.com/peterneubauer/status/8405566771)
 
 [Linked Process](http://www.linkedprocess.org/Home.html) is an
 interesting project allowing people to do Internet-scale computing in
