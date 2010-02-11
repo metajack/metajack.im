@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "amack: XMPP Library for Android Developers"
+title: "asmack: XMPP Library for Android Developers"
 tags: [xmpp, jabber, java, code, android, mobile]
 time: "23:30"
 extended: ":EXTENDED:"
