@@ -32,7 +32,7 @@ This can get complicated quickly, so session attachment may not be the best solu
 
 ## An Example
 
-I've written an [example Django application](http://code.stanziq.com/svn/strophe/trunk/strophejs/examples/attach) which demonstrates how session attachment works.  It's pretty bare bones, but shows exactly how the feature works.
+I've written an [example Django application](https://github.com/metajack/strophejs/tree/master/examples/attach) which demonstrates how session attachment works.  It's pretty bare bones, but shows exactly how the feature works.
 
 Django is used in the example, but any Web framework will probably have a very similar implementation.
 
