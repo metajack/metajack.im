@@ -29,7 +29,7 @@ on both their [Smyle](https://smylenow.com) and
 [DragonForce](http://drakontas.com/software/dragonforce/overview.html)
 products.
 
-<p style='align:center'>
+<p style='text-align:center'>
 <img src='/images/smyle1.jpeg' width='180' height='300'>
 <img src='/images/smyle2.jpeg' width='180' height='300'>
 <br>
