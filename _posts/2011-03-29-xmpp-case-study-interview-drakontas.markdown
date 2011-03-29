@@ -46,10 +46,11 @@ products.
 
 Ilya: Smyle is a group-based social collaboration application that
 allows you and your friends to interact with each other to plan or
-coordinate around specific events.  10:05:09 Ilya Braude: It does this
-by allowing group members to chat, share location, and pictures.  All
-pictures and maps are also instantly turned into shared whiteboard
-sessions, allowing annotations and icon placement.
+coordinate around specific events.
+
+It does this by allowing group members to chat, share location, and
+pictures.  All pictures and maps are also instantly turned into shared
+whiteboard sessions, allowing annotations and icon placement.
 
 <strong>Jack: Can you give some examples of how people are starting to
 use Smyle?</strong>
