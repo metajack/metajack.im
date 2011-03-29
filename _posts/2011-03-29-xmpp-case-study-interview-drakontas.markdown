@@ -35,7 +35,7 @@ products.
 <br>
 <img src='/images/dragonforce1.png' width='512' height='324'>
 <img src='/images/dragonforce2.png' width='523' height='324'>
-<img src='/images/dragonforce2.png' width='523' height='324'>
+<img src='/images/dragonforce3.png' width='523' height='324'>
 </p>
 
 :EXTENDED:
