@@ -21,7 +21,7 @@ Welcome to the first XMPP case study interview, with [Elijah
 Windsor](http://twitter.com/ewindsor), lead developer of
 [Cabulous](http://cabulous.com).
 
-<p style='text-align: center'>>
+<p style='text-align: center'>
 <img src='http://cabulous.com/wp-content/uploads/home-200x300.jpg'
 width='200' height='300' alt='Cabulous screenshot'> <img
 src='http://cabulous.com/wp-content/uploads/IMG_0090-200x300.PNG'
