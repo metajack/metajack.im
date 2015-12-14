@@ -6,7 +6,7 @@ time: "15:39"
 extended: ":EXTENDED:"
 ---
 
-Yesterday I <a href="http://metajack.im/2008/06/12/5-reasons-to-love-django/">told the story</a> of hiring a Django developer:
+Yesterday I <a href="https://metajack.im/2008/06/12/5-reasons-to-love-django/">told the story</a> of hiring a Django developer:
 <blockquote>Python is really easy to learn, and regardless of what you hear, the significant whitespace makes code enjoyable to read.  How easy?  I hired someone who had never used Python or Django, and they wrote the <a href="http://www.chesspark.com/forum/">Chesspark forum</a> in about a week.</blockquote>
 One person <a href="http://www.reddit.com/r/programming/info/6n4dc/comments/c04c4af">commented at Reddit</a> that this was funny, and I'm sure several people read it and thought the same thing.  Usually people place job ads that read "Senior PHP Developer" or "Django Developer Wanted", and here I am hiring someone who has never even used the tools I need him to work with.
 

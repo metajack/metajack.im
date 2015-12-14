@@ -7,7 +7,7 @@ extended: ":EXTENDED:"
 ---
 
 I've [mentioned
-before](http://metajack.im/2008/10/07/building-ejabberd-modules-a-build-tool-battle-won-by-autotools/)
+before](https://metajack.im/2008/10/07/building-ejabberd-modules-a-build-tool-battle-won-by-autotools/)
 that I'm not in love with the autotools (autoconf, automake, libtool,
 etc), but they often get the job done.  I spent a few hours trying to
 move the [libstrophe](http://code.stanziq.com/strophe) build system

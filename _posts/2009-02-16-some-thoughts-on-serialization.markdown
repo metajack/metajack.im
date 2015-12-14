@@ -6,8 +6,8 @@ time: "20:00"
 extended: ":EXTENDED:"
 ---
 
-I've [written](http://metajack.im/2009/01/18/speed-up-ejabberd/)
-[before](http://metajack.im/2009/01/26/make-your-twisted-xmpp-apps-scream/)
+I've [written](https://metajack.im/2009/01/18/speed-up-ejabberd/)
+[before](https://metajack.im/2009/01/26/make-your-twisted-xmpp-apps-scream/)
 that XML serialization tends to be the main bottleneck in XMPP apps.
 I haven't benchmarked other software stacks that involve
 serialization, but I'm guessing it's expensive everywhere.  Here are

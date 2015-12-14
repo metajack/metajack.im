@@ -8,7 +8,7 @@ extended: ":EXTENDED:"
 
 <a href="http://www.technobabble.dk/2008/jun/07/django-importance-releases/">Christian writes</a> about his frustration with Django's release process.  There has not been a new release of <a href="http://www.djangoproject.com/">Django</a> for over a year, and the prevailing advice is to use trunk, the latest development code.  I sympathize with him.
 
-We run Django 0.96 at <a href="http://www.chesspark.com/">Chesspark</a> with plenty of patches.  We have our <a href="http://metajack.im/2007/08/02/django-patches-for-efficient-database-access/">database patches</a> that fix many inefficiencies in stock Django.  All but one of these patches are still, a year later, not integrated upstream.  Most of the patches have been accepted but are just sitting there.  Recently we added a backport of the <a href="http://code.djangoproject.com/ticket/2070">streaming file uploads patch</a>, which has also not been integrated into trunk.
+We run Django 0.96 at <a href="http://www.chesspark.com/">Chesspark</a> with plenty of patches.  We have our <a href="https://metajack.im/2007/08/02/django-patches-for-efficient-database-access/">database patches</a> that fix many inefficiencies in stock Django.  All but one of these patches are still, a year later, not integrated upstream.  Most of the patches have been accepted but are just sitting there.  Recently we added a backport of the <a href="http://code.djangoproject.com/ticket/2070">streaming file uploads patch</a>, which has also not been integrated into trunk.
 
 <strong>No Releases Leads To Slower Development</strong>
 
@@ -35,7 +35,7 @@ These issues need to be addressed, and I hope the Django team does so.  It was 
 
 Please keep making Django better.  We'll be here trying to help.
 
-<strong>UPDATE 06/12:</strong> Please read the counterpart post as well: <a href="http://metajack.im/2008/06/12/5-reasons-to-love-django/">5 Reasons To Love Django</a>.
+<strong>UPDATE 06/12:</strong> Please read the counterpart post as well: <a href="https://metajack.im/2008/06/12/5-reasons-to-love-django/">5 Reasons To Love Django</a>.
 
 :EXTENDED:
 

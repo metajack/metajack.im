@@ -9,7 +9,7 @@ extended: ":EXTENDED:"
 XMPP session establishment is normally quite fast over native sockets,
 but over BOSH, the round-trip latency of several request and response
 pairs can be quite high. Among its other benefits, [session
-attachment](http://metajack.im/2008/10/03/getting-attached-to-strophe/)
+attachment](https://metajack.im/2008/10/03/getting-attached-to-strophe/)
 provides a great solution to this problem.
 
 I first heard of this technique for rapid session bootstrapping, called *pre-binding*, bootstrapping from [Andy Skelton](http://andyskelton.com/). Andy had

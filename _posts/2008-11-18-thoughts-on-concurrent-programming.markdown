@@ -6,7 +6,7 @@ time: "22:57"
 extended: ":EXTENDED:"
 ---
 
-I'm a fan of [learning lots of languages](http://metajack.im/2008/10/22/be-multi-lingual-and-learn-a-new-language/), and there are plenty of interesting ones out there to learn.  I was recently watching some of the [Clojure](http://clojure.org/) [videos](http://clojure.blip.tv), and Rich Hickey had a nice quote about concurrent programming:
+I'm a fan of [learning lots of languages](https://metajack.im/2008/10/22/be-multi-lingual-and-learn-a-new-language/), and there are plenty of interesting ones out there to learn.  I was recently watching some of the [Clojure](http://clojure.org/) [videos](http://clojure.blip.tv), and Rich Hickey had a nice quote about concurrent programming:
 
 > Mutable objects are the new spaghetti code.
 

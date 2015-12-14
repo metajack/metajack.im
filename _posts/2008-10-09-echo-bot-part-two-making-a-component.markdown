@@ -6,7 +6,7 @@ time: "17:34"
 extended: ":EXTENDED:"
 ---
 
-Many people write XMPP services as client bots, but the problem with this is that this doesn't scale well.  The first step to [improving the scalability of an XMPP service](http://metajack.im/2008/08/04/thoughts-on-scalable-xmpp-bots/) is to implement the service as a server component.  To demonstrate this, I will revisit the [echo bot tutorial](http://metajack.im/2008/09/25/an-xmpp-echo-bot-with-twisted-and-wokkel/) and turn it into an XMPP server component.  This turns out to be remarkably easy with [Twisted](http://www.twistedmatrix.com) and [Wokkel](http://wokkel.ik.nu).
+Many people write XMPP services as client bots, but the problem with this is that this doesn't scale well.  The first step to [improving the scalability of an XMPP service](https://metajack.im/2008/08/04/thoughts-on-scalable-xmpp-bots/) is to implement the service as a server component.  To demonstrate this, I will revisit the [echo bot tutorial](https://metajack.im/2008/09/25/an-xmpp-echo-bot-with-twisted-and-wokkel/) and turn it into an XMPP server component.  This turns out to be remarkably easy with [Twisted](http://www.twistedmatrix.com) and [Wokkel](http://wokkel.ik.nu).
 
 
 
@@ -14,7 +14,7 @@ Many people write XMPP services as client bots, but the problem with this is tha
 
 ## Sub-Protocols To the Rescue
 
-We created an echo bot protocol in the [previous example](http://metajack.im/2008/09/25/an-xmpp-echo-bot-with-twisted-and-wokkel/) which listened for incoming messages and replied to those messages.  For our component, we want to do the same thing.
+We created an echo bot protocol in the [previous example](https://metajack.im/2008/09/25/an-xmpp-echo-bot-with-twisted-and-wokkel/) which listened for incoming messages and replied to those messages.  For our component, we want to do the same thing.
 
 Wokkel is designed so that sub-protocols are mostly agnostic to the type of underlying connection.  This means that we can re-use the *exact same code* for our componentized echo bot.  Actually, we'll make one tiny change to the `EchoBotProtocol` class since the original version sends initial presence to the server, which is only required for client connections.
 

@@ -6,7 +6,7 @@ time: "22:57"
 extended: ":EXTENDED:"
 ---
 
-Yesterday I [described](http://metajack.im/2008/10/30/srv-lookups-in-erlang/) the problems I had writing code to do DNS SRV lookups in [Erlang](http://www.erlang.org).  Today I'll describe how to use the code and also go through a few bits of it.
+Yesterday I [described](https://metajack.im/2008/10/30/srv-lookups-in-erlang/) the problems I had writing code to do DNS SRV lookups in [Erlang](http://www.erlang.org).  Today I'll describe how to use the code and also go through a few bits of it.
 
 
 
@@ -44,7 +44,7 @@ Call `connect_xmpp_client("jabber.org")` to open a socket to our favorite server
 
 ## Examining `srv.erl`
 
-The [code](http://metajack.im/code/srv.erl) is fairly simple, but I'd like to go through a few parts for those of you who might be interested in or already learning Erlang.
+The [code](https://metajack.im/code/srv.erl) is fairly simple, but I'd like to go through a few parts for those of you who might be interested in or already learning Erlang.
 
 We use `inet_res/getbyname/2` to do the SRV lookup.  As I explained yesterday, this function is completely undocumented.  It is extremely simple to use as it returns a normal `hostent` record, except that the address list, `hostent.h_addr_list`, contains SRV results tuples.  These look like the example below.
 

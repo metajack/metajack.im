@@ -42,4 +42,4 @@ Federated XMPP Web applications need exactly these two advantages.  If you're do
 
 ## What To Do With BOSH
 
-Once you have a BOSH enabled server or a stand-alone BOSH connection manager, you'll soon discover that [XMPP is better with BOSH](http://metajack.im/2008/07/02/xmpp-is-better-with-bosh/).  What you do from here is limited only by your creativity.  You could create [real-time Web games](http://www.chesspark.com), microblogging clients, monitoring applications, or just add chat support to your Web site.  The future of the Web is XMPP, and BOSH will help you get there.
+Once you have a BOSH enabled server or a stand-alone BOSH connection manager, you'll soon discover that [XMPP is better with BOSH](https://metajack.im/2008/07/02/xmpp-is-better-with-bosh/).  What you do from here is limited only by your creativity.  You could create [real-time Web games](http://www.chesspark.com), microblogging clients, monitoring applications, or just add chat support to your Web site.  The future of the Web is XMPP, and BOSH will help you get there.

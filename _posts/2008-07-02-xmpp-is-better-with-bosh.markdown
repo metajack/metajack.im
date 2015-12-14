@@ -50,7 +50,7 @@ We've created a Twisted BOSH client interface for testing Punjab and various Che
 
 <strong>Get BOSHing</strong>
 
-What are you waiting for?  Go read the BOSH specification in <a href="http://www.xmpp.org/extensions/xep-0124.html">XEP 124</a>.  Go write an interesting XMPP Web application with <a href="http://metajack.im/2008/06/30/strophe-preview-xmpp-in-javascript/">Strophe</a>.  Go check out a BOSH server like <a href="http://www.butterfat.net/wiki/Projects/PunJab">Punjab</a>.  Go run <a href="http://thetofu.livejournal.com/71339.html">BOSH in the cloud</a>.
+What are you waiting for?  Go read the BOSH specification in <a href="http://www.xmpp.org/extensions/xep-0124.html">XEP 124</a>.  Go write an interesting XMPP Web application with <a href="https://metajack.im/2008/06/30/strophe-preview-xmpp-in-javascript/">Strophe</a>.  Go check out a BOSH server like <a href="http://www.butterfat.net/wiki/Projects/PunJab">Punjab</a>.  Go run <a href="http://thetofu.livejournal.com/71339.html">BOSH in the cloud</a>.
 
 :EXTENDED:
 

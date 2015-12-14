@@ -40,7 +40,7 @@ for Jingle calls.
   [#](http://identi.ca/notice/22312632)
 
 This is another implementation of the [HTTP pre-binding
-technique](http://metajack.im/2009/12/14/fastest-xmpp-sessions-with-http-prebinding/). See
+technique](https://metajack.im/2009/12/14/fastest-xmpp-sessions-with-http-prebinding/). See
 [mod_prebind](http://github.com/skeltoac/http_prebind) and
 [Mod_Http_Pre_Bind](http://github.com/thepug/Mod-Http-Pre-Bind) for
 two other example implementations.

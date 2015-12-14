@@ -10,7 +10,7 @@ I found the [XMPP Case
 Studies](http://wiki.xmpp.org/web/XMPP_Case_Studies) page in the [XMPP
 wiki](http://wiki.xmpp.org) the other day. If you are looking for more
 XMPP case study reading while I work on the next [case study
-interview](http://metajack.im/2010/01/05/xmpp-case-study-interview-cabulous/),
+interview](https://metajack.im/2010/01/05/xmpp-case-study-interview-cabulous/),
 these may be of interest. I can't believe I have never run across this
 page before; it makes me wonder what other hidden gems are to be found
 in the wiki.

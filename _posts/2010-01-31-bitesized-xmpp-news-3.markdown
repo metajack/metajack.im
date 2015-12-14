@@ -61,7 +61,7 @@ the stanza to all tied resources. The current [XMPP
 specifications](http://xmpp.org/rfcs/) allow the server discretion in
 how to handled tied priorities. This is one of the things being talked
 about a bit for the [upcoming
-revisions](http://metajack.im/2010/01/28/xmpp-core-specifications-being-updated/).
+revisions](https://metajack.im/2010/01/28/xmpp-core-specifications-being-updated/).
 
 I believe most of the XMPP community considers multiple resource
 delivery in the case of a presence priority tie to be the correct

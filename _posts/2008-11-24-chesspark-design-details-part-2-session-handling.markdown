@@ -6,7 +6,7 @@ time: "16:21"
 extended: ":EXTENDED:"
 ---
 
-In [part one](http://metajack.im/2008/11/21/chesspark-design-details-part-1-why-xmpp/) of this series I talked about why XMPP makes a good technology base for an online gaming platform like [Chesspark](http://www.chesspark.com).  Let's get a little more technical now, and look at specifically at how XMPP is used at Chesspark in the context of session handling.
+In [part one](https://metajack.im/2008/11/21/chesspark-design-details-part-1-why-xmpp/) of this series I talked about why XMPP makes a good technology base for an online gaming platform like [Chesspark](http://www.chesspark.com).  Let's get a little more technical now, and look at specifically at how XMPP is used at Chesspark in the context of session handling.
 
 
 

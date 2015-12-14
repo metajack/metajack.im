@@ -44,7 +44,7 @@ SIMPLE integration, but [Joe Hildebrand](http://arch.jabber.com/), CTO
 of Jabber, Inc, told me that Cisco is focused on XMPP with this
 acquisition.
 
-This looks to be another [nail in the coffin](http://metajack.im/2008/09/13/xmpp-at-the-ietf---its-simpler/) for SIMPLE.
+This looks to be another [nail in the coffin](https://metajack.im/2008/09/13/xmpp-at-the-ietf---its-simpler/) for SIMPLE.
 
 ## Only The Beginning
 

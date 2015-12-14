@@ -10,7 +10,7 @@ It's taking a bit longer than planned to whip Strophe into releasable shape, but
 
 On a related note, <a href="http://matthewwild.co.uk">Matthew Wild</a> is working on an <a href="http://matthewwild.co.uk/projects/verse/verse_doc.xml">XMPP library for Lua</a> built on top of libstrophe.
 
-Also, <a href="http://metajack.im/2008/08/08/learn-about-xmpp-at-sxsw-2009/">remember to vote</a> for my XMPP <a href="http://panelpicker.sxsw.com/ideas/view/1934">talk</a> and <a href="http://panelpicker.sxsw.com/ideas/view/1933">panel</a> at SXSW 2009.
+Also, <a href="https://metajack.im/2008/08/08/learn-about-xmpp-at-sxsw-2009/">remember to vote</a> for my XMPP <a href="http://panelpicker.sxsw.com/ideas/view/1934">talk</a> and <a href="http://panelpicker.sxsw.com/ideas/view/1933">panel</a> at SXSW 2009.
 
 UPDATED 8/26: It turns out Tigase and Openfire are smarter than the other XMPP servers with DIGEST-MD5 authentication, and that it wasn't a bug at all.  My apologies (kudos) to the Tigase and Openfire teams.  The issue is now fixed in trunk.
 

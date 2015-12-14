@@ -20,7 +20,7 @@ I often meet people doing amazing things with XMPP technologies, and
 through these case study interviews, I want to highlight the great
 work that these people and companies are doing. This is the second
 case study interview (see the first one on
-[Cabulous](http://metajack.im/2010/01/05/xmpp-case-study-interview-cabulous/)),
+[Cabulous](https://metajack.im/2010/01/05/xmpp-case-study-interview-cabulous/)),
 and I really hope you are enjoying these as much as I am.
 
 [Ilya Braude](http://www.ilyabraude.com) is our guest for this

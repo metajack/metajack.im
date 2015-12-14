@@ -43,7 +43,7 @@ After the launch, I told several people about Strophe, and the code
 was available if you knew were to look for it. It took me almost three
 years before I had time to re-factor, modularize, and prepare the code
 for a real release. In June of 2008, I [announced this Strophe.js
-preview](http://metajack.im/2008/06/30/strophe-preview-xmpp-in-javascript/).
+preview](https://metajack.im/2008/06/30/strophe-preview-xmpp-in-javascript/).
 
 Since then, it has been a wild ride. Here I am over four years later,
 and my little weekend prototype has grown into quite a library, if I

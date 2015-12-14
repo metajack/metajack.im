@@ -6,7 +6,7 @@ time: "10:10"
 extended: ":EXTENDED:"
 ---
 
-Last week I [wrote](http://metajack.im/2008/09/18/merging-does-not-have-to-be-so-bad/) about the various third party tools one can use to make branch based development easy with Subversion.  One of the comments to that post mentioned new merging features in Subversion 1.5, and I quickly checked them out.  They solve the same issues as [Combinator](http://divmod.org/trac/wiki/DivmodCombinator) and [svnmerge.py](http://www.orcaware.com/svn/wiki/Svnmerge.py) and more.
+Last week I [wrote](https://metajack.im/2008/09/18/merging-does-not-have-to-be-so-bad/) about the various third party tools one can use to make branch based development easy with Subversion.  One of the comments to that post mentioned new merging features in Subversion 1.5, and I quickly checked them out.  They solve the same issues as [Combinator](http://divmod.org/trac/wiki/DivmodCombinator) and [svnmerge.py](http://www.orcaware.com/svn/wiki/Svnmerge.py) and more.
 
 :EXTENDED:
 

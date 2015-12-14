@@ -6,7 +6,7 @@ time: "16:42"
 extended: ":EXTENDED:"
 ---
 
-In <a href="http://metajack.im/2007/07/25/do-you-know-what-your-database-is-doing/">Do You Know What Your Database Is Doing</a>, I mentioned that we had fixed several problems in Django that we discovered by using our query analyzer on <a href="http://www.chesspark.com/">Chesspark's</a> database logs.  Here's a list of the main tickets we've filed against Django.  The relevant patches and discussion are attached to the tickets.
+In <a href="https://metajack.im/2007/07/25/do-you-know-what-your-database-is-doing/">Do You Know What Your Database Is Doing</a>, I mentioned that we had fixed several problems in Django that we discovered by using our query analyzer on <a href="http://www.chesspark.com/">Chesspark's</a> database logs.  Here's a list of the main tickets we've filed against Django.  The relevant patches and discussion are attached to the tickets.
 <ul>
 	<li><a href="http://code.djangoproject.com/ticket/3460">Ticket #3460: psycopg2 backend uses wrong isolation level</a> - This was the big one.  The database should be used in autocommit mode for single queries, and transactions should be used where necessary.  The python DB-API 2.0 mandates that the database wrapper automatically wrap transactions when not in autocommit mode, which leads to really inefficient database use when lots of single queries are used.  This is pretty much how every web app works, so fixing this will give you quite a database speed boost.</li>
 	<li><a href="http://code.djangoproject.com/ticket/3459">Ticket #3459: initializing queries called too many times</a> - Django initialized the database by calling SET TIME ZONE and such for every query instead of only on connection setup.  This patch is now in the official tree.</li>

@@ -114,7 +114,7 @@ I can easily push and pull the blog around between machines and I
 always have access to the entire blog no matter what machine I'm on.
 
 I also wrote [some Emacs
-glue](http://metajack.im/2009/01/02/manage-jekyll-from-emacs/) to help
+glue](https://metajack.im/2009/01/02/manage-jekyll-from-emacs/) to help
 automate my own blogging workflow.  I start new drafts with `C-c b n`
 and then move drafts to the `_posts` folder with `C-c b P`.  I can
 also easily access the list of drafts or posts when I'm searching for

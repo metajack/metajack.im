@@ -6,7 +6,7 @@ time: "10:26"
 extended: ":EXTENDED:"
 ---
 
-On January 1st, 2010, [Strophe 1.0 was released](http://metajack.im/2010/01/01/celebrate-2010-with-strophejs-10/). This release
+On January 1st, 2010, [Strophe 1.0 was released](https://metajack.im/2010/01/01/celebrate-2010-with-strophejs-10/). This release
 included several new features that I haven't talked about before, so I
 wanted to make sure they got some attention. These features are the
 ability to match on bare JIDs in handlers and to flush pending

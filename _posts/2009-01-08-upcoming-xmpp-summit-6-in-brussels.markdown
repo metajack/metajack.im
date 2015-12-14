@@ -20,7 +20,7 @@ where I'll be if you'd like to get together and talk shop.
   European members of our community that I know only through IM.
 * In **March** I'll be at [SXSW](http://www.sxsw.com).  Unfortunately,
   my [XMPP talk
-  proposals](http://metajack.im/2008/08/08/learn-about-xmpp-at-sxsw-2009/)
+  proposals](https://metajack.im/2008/08/08/learn-about-xmpp-at-sxsw-2009/)
   were rejected this year, but I'm trying to put together a little
   SXSW XMPP meetup anyway.
 

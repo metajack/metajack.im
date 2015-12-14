@@ -6,7 +6,7 @@ time: "10:02"
 extended: ":EXTENDED:"
 ---
 
-[XMPP](http://www.xmpp.org) is getting more and more popular.  Every day we see new companies and new projects capitalizing on the strengths of the protocol.  The downside of this popularity is that we must also put up with the dilettantes like [Twitter](http://twitter.com) and [Gnip](http://www.gnipcentral.com).  Like Twitter, Gnip has  [ceased its promising experiments](http://blog.gnipcentral.com/2008/11/03/winding-down-xmpp-for-now/) with XMPP.  Like Twitter, they [blame the technology](http://metajack.im/2008/09/03/twitters-failures-are-not-xmpps-failures/index.html) involved.
+[XMPP](http://www.xmpp.org) is getting more and more popular.  Every day we see new companies and new projects capitalizing on the strengths of the protocol.  The downside of this popularity is that we must also put up with the dilettantes like [Twitter](http://twitter.com) and [Gnip](http://www.gnipcentral.com).  Like Twitter, Gnip has  [ceased its promising experiments](http://blog.gnipcentral.com/2008/11/03/winding-down-xmpp-for-now/) with XMPP.  Like Twitter, they [blame the technology](https://metajack.im/2008/09/03/twitters-failures-are-not-xmpps-failures/index.html) involved.
 
 
 
@@ -40,4 +40,4 @@ Finally, it's easy to write XMPP clients.  There are [tons of libraries](http://
 
 While Gnip and Twitter abandon XMPP, many others are doing exactly the opposite.  [Enjit](http://www.enjit.com) is providing a real time interface to [FriendFeed](http://www.friendfeed.com) via XMPP.  There are already people writing [clients](http://github.com/mojodna/fire_hydrant/tree/master) for Yahoo's FireEagle location services which use XMPP.  Don't forget [Identica](http://identi.ca) which is doing much of what Twitter gave up on, also via XMPP.
 
-This is a high technology industry, and why anyone would abandon the best tools for real time communication is a mystery to me.  Just as [Graham](http://www.paulgraham.com/icad.html) lays out the case for different languages having different "power", I think the [same is true for protocols](http://metajack.im/2008/09/11/real-time-is-completely-different/).  I know I'll be sticking with the powerhouse, XMPP.
+This is a high technology industry, and why anyone would abandon the best tools for real time communication is a mystery to me.  Just as [Graham](http://www.paulgraham.com/icad.html) lays out the case for different languages having different "power", I think the [same is true for protocols](https://metajack.im/2008/09/11/real-time-is-completely-different/).  I know I'll be sticking with the powerhouse, XMPP.

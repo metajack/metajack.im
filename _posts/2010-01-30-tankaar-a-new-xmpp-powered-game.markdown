@@ -27,4 +27,4 @@ Windows version is currently available for download.
 
 I'll be e-mailing Rohit to see if he's interested in participating in
 the [XMPP case
-studies](http://metajack.im/2010/01/05/xmpp-case-study-interview-cabulous/) interviews.
+studies](https://metajack.im/2010/01/05/xmpp-case-study-interview-cabulous/) interviews.

@@ -12,7 +12,7 @@ It is bad news because Twitter's IM interface provided needed motivation for man
 
 it is good news for the open microblogging movement.  All the current open microblogging sites fully support an XMPP interface, and people are now starting to refine these and build new stuff on top.  [Seesmic](http://www.seesmic.com)'s Twhirl client uses XMPP to get faster updates, and [Laconica](http://laconi.ca) recently got command parsing features in the XMPP interface.
 
-I continue to believe that [XMPP will be crucial](http://metajack.im/2008/09/10/xmpp-microblogging-thoughts/) for open microblogging and in the communications space in general because [real time data is different](http://metajack.im/2008/09/11/real-time-is-completely-different/).
+I continue to believe that [XMPP will be crucial](https://metajack.im/2008/09/10/xmpp-microblogging-thoughts/) for open microblogging and in the communications space in general because [real time data is different](https://metajack.im/2008/09/11/real-time-is-completely-different/).
 
 :EXTENDED:
 

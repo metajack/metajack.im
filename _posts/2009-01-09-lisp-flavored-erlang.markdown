@@ -13,7 +13,7 @@ see the [mailing list
 post](http://groups.google.com/group/erlang-questions/browse_thread/thread/adfe375287d4bef4/4a9127e701f5e2db#)).
 I'd heard about this several times before, but had not tried it.
 Since my [Erlang
-complaints](http://metajack.im/2009/01/05/brevity-and-programming-languages/)
+complaints](https://metajack.im/2009/01/05/brevity-and-programming-languages/)
 are still fresh in my mind, I decided to give it a go.  Besides, I
 needed a mental break after spending all day concentrating on real
 work.

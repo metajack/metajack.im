@@ -28,4 +28,4 @@ Oddly, `inet:gethostbyname` always works, even without special configuration or 
 
 ## The Result
 
-The SRV lookup module I created is available [here](http://metajack.im/code/srv.erl).  I'll go over the code and how to use it in my next post.  It's nothing earth-shattering, but if any of you are budding Erlang programmers, you might find it helpful.
+The SRV lookup module I created is available [here](https://metajack.im/code/srv.erl).  I'll go over the code and how to use it in my next post.  It's nothing earth-shattering, but if any of you are budding Erlang programmers, you might find it helpful.

@@ -6,7 +6,7 @@ time: "09:36"
 extended: ":EXTENDED:"
 ---
 
-It's no secret that I think XMPP and microblogging were [made for each other](http://metajack.im/2008/09/10/xmpp-microblogging-thoughts/).  Several people have disagreed stating that users will reject IM as an interface and are more comfortable with the Web.  Implicit in this argument is that the nature of the underlying transport must be visible to the end user, which is not true even with HTTP.  XMPP can make microblogging better by being an invisible superhero, and the users never have to know.
+It's no secret that I think XMPP and microblogging were [made for each other](https://metajack.im/2008/09/10/xmpp-microblogging-thoughts/).  Several people have disagreed stating that users will reject IM as an interface and are more comfortable with the Web.  Implicit in this argument is that the nature of the underlying transport must be visible to the end user, which is not true even with HTTP.  XMPP can make microblogging better by being an invisible superhero, and the users never have to know.
 
 :EXTENDED:
 
@@ -14,7 +14,7 @@ It's no secret that I think XMPP and microblogging were [made for each other](ht
 
 "Use the right tool for the job" and "to someone with a hammer, everything looks like a nail" are common expressions.  They proclaim that any given solution to a problem is not perfectly applicable to all problems.  This is true whether the solution is a mechanical tool, a piece of software, or just a transport protocol.  Using the correct tool is important.
 
-Many things on the Internet are well transported by the HTTP protocol.  HTTP is such a generally useful tool that it could be considered one of the Internet's [simple machines](http://en.wikipedia.org/wiki/Simple_machines).  That said, it is not the best at everything, and [real time notification](http://metajack.im/2008/09/11/real-time-is-completely-different/) has better transports.  XMPP is the better tool for real time.
+Many things on the Internet are well transported by the HTTP protocol.  HTTP is such a generally useful tool that it could be considered one of the Internet's [simple machines](http://en.wikipedia.org/wiki/Simple_machines).  That said, it is not the best at everything, and [real time notification](https://metajack.im/2008/09/11/real-time-is-completely-different/) has better transports.  XMPP is the better tool for real time.
 
 ## Invisibility is Expected
 

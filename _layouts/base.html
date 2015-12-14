@@ -13,10 +13,10 @@ scripts:
 
     <link rel='stylesheet' href='/styles.css'>
 
-    <link rel="start" href="http://metajack.im/" title="Home">
+    <link rel="start" href="https://metajack.im/" title="Home">
     <link rel="alternate" type="application/atom+xml" 
 	  title="Recent Entries"
-          href="http://feeds.feedburner.com/metajack">
+          href="https://metajack.im/atom.xml">
 
     <link rel="stylesheet" 
           href="/syntaxhighlight/css/SyntaxHighlighter.css">
@@ -25,7 +25,7 @@ scripts:
       <rdf:RDF xmlns="http://web.resource.org/cc/"
                xmlns:dc="http://purl.org/dc/elements/1.1/"
 	       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-        <Work rdf:about="http://metajack.im/">
+        <Work rdf:about="https://metajack.im/">
 	  <dc:title>metajack.im</dc:title>
 	  <dc:description>a blog about startups and code</dc:description>
 	  <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" />
@@ -54,7 +54,7 @@ scripts:
     {% if post %}
     <script>
       <!--
-         var disqus_url = 'http://metajack.im{{ post.url }}';
+         var disqus_url = 'https://metajack.im{{ post.url }}';
          // -->
     </script>
     {% endif %}
@@ -83,12 +83,12 @@ scripts:
         </header>
 
         <p>
-          <a href='http://www.amazon.com/gp/product/0470540710?tag=metajack-20'>
+          <a href='https://www.amazon.com/gp/product/0470540710?tag=metajack-20'>
             <img src='/images/profxmpp_cover.jpg' width='100' height='125'
                  alt='Book cover of Professional XMPP Programming'>
           </a>
           Buy my book, <a href='http://professionalxmpp.com'>Professional XMPP Programming with JavaScript and
-          jQuery</a>, from <a href='http://www.amazon.com/gp/product/0470540710?tag=metajack-20'>Amazon US</a> or <a href='http://www.amazon.co.uk/gp/product/0470540710?tag=metajack-20'>Amazon UK</a> to learn more about developing awesome XMPP
+          jQuery</a>, from <a href='https://www.amazon.com/gp/product/0470540710?tag=metajack-20'>Amazon US</a> or <a href='https://www.amazon.co.uk/gp/product/0470540710?tag=metajack-20'>Amazon UK</a> to learn more about developing awesome XMPP
           applications.
         </p>
       </aside>
@@ -104,14 +104,14 @@ scripts:
                alt='Picture of Jack Moffitt'>
           
           I'm a hacker and entrepreneur based in Albuquerque, New
-          Mexico. I have founded several startups built on <a href='http://xmpp.org'>XMPP</a>
-          technology including <a href='http://collecta.com'>Collecta</a>, a real-time search engine for
-          the Web, and <a href='http://chesspark.com'>Chesspark</a>, a real-time, multi-user gaming
+          Mexico. I have founded several startups built on <a href='https://xmpp.org'>XMPP</a>
+          technology including Collecta, a real-time search engine for
+          the Web, and Chesspark, a real-time, multi-user gaming
           platform. You can learn more about me on the <a href='/about/'>about page</a>.
         </p>
 
         <p>
-          Follow <a href='http://twitter.com/metajack'>@metajack</a> on <a href='http://twitter.com/metajack'>Twitter</a> or <a href='http://identi.ca/metajack'>Identica</a>, or contact me at jack at metajack.im.
+          Follow <a href='https://twitter.com/metajack'>@metajack</a> on <a href='https://twitter.com/metajack'>Twitter</a>, or contact me at jack at metajack.im.
         </p>
       </aside>
       {% endunless %}
@@ -119,7 +119,7 @@ scripts:
 
     <footer>
       <p>
-        <a href='http://feeds.feedburner.com/metajack'>
+        <a href='https://metajack.im/atom.xml'>
           <img src='/images/feed-icon-16x16.png' width='16' height='16'
                alt='Feed icon'>
 
@@ -166,7 +166,7 @@ scripts:
 	    query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
 	  }
 	}
-	$LAB.script('http://disqus.com/forums/metajack/get_num_replies.js' + query);
+	$LAB.script('https://disqus.com/forums/metajack/get_num_replies.js' + query);
 })();
          // -->
     </script>

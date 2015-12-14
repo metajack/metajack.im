@@ -14,7 +14,7 @@ One of the first questions I get asked about [Strophe](http://code.stanziq.com/s
 
 BOSH provides a single entry point - a URL.  Client code makes requests of this URL and processes the responses.  All XMPP data is shuttled through this URL to and from the underlying BOSH connection manager, and eventually to an XMPP server.
 
-Once data is has arrived at the connection manager, the security policy of the browser is no longer in effect.  If the BOSH server is of the stand-alone type (see [Which BOSH Server Do You Need?](http://metajack.im/2008/09/08/which-bosh-server-do-you-need/)), it can connect to any public XMPP server it likes.  This means that the only requirement for JavaScript code to talk to any XMPP server is to have a BOSH URL at the origin Web site.
+Once data is has arrived at the connection manager, the security policy of the browser is no longer in effect.  If the BOSH server is of the stand-alone type (see [Which BOSH Server Do You Need?](https://metajack.im/2008/09/08/which-bosh-server-do-you-need/)), it can connect to any public XMPP server it likes.  This means that the only requirement for JavaScript code to talk to any XMPP server is to have a BOSH URL at the origin Web site.
 
 Doesn't this mean you must run a BOSH connection manager on your Web server?  Definitely not.  Manipulating URLs is what Web servers are built for.  Any decent Web server will support proxying the content of an arbitrary URL to a local URL.  This means you can run a BOSH server anywhere on the Internet, and proxy the requests from a local URL to the BOSH endpoint.
 

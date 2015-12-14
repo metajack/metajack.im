@@ -12,7 +12,7 @@ talks from the [FOSDEM](http://fosdem.org) XMPP dev room, but I only
 managed to record the very first one. Watch below as
 [Remko](http://el-tramo.be) gives a good overview of all things XMPP.
 
-<video src='http://metajack.im/videos/summit8-xmpp101.ogv' controls='controls' autobuffer='autobuffer' width='640' height='480'>
+<video src='https://metajack.im/videos/summit8-xmpp101.ogv' controls='controls' autobuffer='autobuffer' width='640' height='480'>
 This video requires a browser that supports HTML5 video in <a
 href='http://theora.org/'>Theora</a> format. Support open, royalty-free
 multimedia codecs!

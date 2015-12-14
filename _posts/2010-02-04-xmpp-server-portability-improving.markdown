@@ -18,7 +18,7 @@ This means that once all the servers have support for this, you'll be
 able to move from one XMPP server to another very easily. Previously
 this required writing custom migration scripts or hacking the code;
 you can read about Chesspark's [move to
-ejabberd](http://metajack.im/2008/08/27/migrating-to-ejabberd-the-gory-details/),
+ejabberd](https://metajack.im/2008/08/27/migrating-to-ejabberd-the-gory-details/),
 where my team went through such a migration. If only this had been
 around back then, it might have saved us some time.
 

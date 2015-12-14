@@ -20,4 +20,4 @@ Facebook, FriendFeed and others have shown us the power of the
 social graph as a filter.
 
 I pose this question to all of you: how will we filter the [real time
-web](http://metajack.im/2008/09/11/real-time-is-completely-different/)?  
+web](https://metajack.im/2008/09/11/real-time-is-completely-different/)?  

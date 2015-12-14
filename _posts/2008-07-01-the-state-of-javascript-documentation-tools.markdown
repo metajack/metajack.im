@@ -6,7 +6,7 @@ time: "23:28"
 extended: ":EXTENDED:"
 ---
 
-I've been working furiously over the last week to prepare a 1.0 release of <a href="http://metajack.im/2008/06/30/strophe-preview-xmpp-in-javascript/">Strophe</a>. For the C library Doxygen was an easy choice.  The markup is based on <a href="http://en.wikipedia.org/wiki/Javadoc">Javadoc</a>, and the tool just works.  For JavaScript, there are few choices, and most of the choices are just terrible.
+I've been working furiously over the last week to prepare a 1.0 release of <a href="https://metajack.im/2008/06/30/strophe-preview-xmpp-in-javascript/">Strophe</a>. For the C library Doxygen was an easy choice.  The markup is based on <a href="http://en.wikipedia.org/wiki/Javadoc">Javadoc</a>, and the tool just works.  For JavaScript, there are few choices, and most of the choices are just terrible.
 
 <strong>Documentation Styles</strong>
 

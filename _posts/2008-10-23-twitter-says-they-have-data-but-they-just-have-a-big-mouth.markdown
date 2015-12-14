@@ -18,7 +18,7 @@ Back in the time before time, getting access to Twitter's firehose was just a qu
 
 I don't know the exact time that they started pruning the list of consumers of the firehose, but to me it seemed like this starting happening after Summize was acquired or around that time.  The logical conclusion from this is that Twitter does not want more interesting things being built on top of its data.  I'm not sure anyone really noticed until they started removing all the interesting features like track and IM integration.
 
-At and after [BearHugCamp](http://metajack.im/2008/09/13/bearhugcamp-for-those-who-missed-it/), the Twitter folks told us to talk to [Gnip](http://www.gnipcentral.com) to get access to the firehose.  Twitter's systems weren't set up to handle broadcasting the firehose, and Gnip was set up to do exactly this.  Many of us immediately started conversations with Gnip.  I can only speak for myself, but as far as I know, we are all waiting for access.
+At and after [BearHugCamp](https://metajack.im/2008/09/13/bearhugcamp-for-those-who-missed-it/), the Twitter folks told us to talk to [Gnip](http://www.gnipcentral.com) to get access to the firehose.  Twitter's systems weren't set up to handle broadcasting the firehose, and Gnip was set up to do exactly this.  Many of us immediately started conversations with Gnip.  I can only speak for myself, but as far as I know, we are all waiting for access.
 
 Now Alex gives us a tiny clue:
 

@@ -84,7 +84,7 @@ breathe via the XMPP interface, it has been painful.
   different. [#](http://twitter.com/stuartmalin/status/8161346669)
 
 [I beg to
-differ](http://metajack.im/2008/09/15/an_xmpp_microblogging_stack/)
+differ](https://metajack.im/2008/09/15/an_xmpp_microblogging_stack/)
 with stuartmalin. I'm with novaspivack; I think XMPP is a perfect base
 for federated social media of almost any sort, especially something as
 interactive as microblogging. I'd really like to know what you see as
@@ -117,7 +117,7 @@ use cases of XMPP but remain some of the more popular.
   [#](http://twitter.com/communicating/status/8099515326)
 
 There's a [lot to
-like](http://metajack.im/2008/07/02/xmpp-is-better-with-bosh/) about
+like](https://metajack.im/2008/07/02/xmpp-is-better-with-bosh/) about
 [BOSH](http://xmpp.org/tech/bosh.shtml). It's one of the oldest long
 polling protocols, and by far my favorite.
 
@@ -157,7 +157,7 @@ applying.
   work... [#](http://twitter.com/paulscott56/status/8059994142)
 
 I wrote about the [microblogging
-XEP](http://metajack.im/2010/01/23/the-inbox-files-2-microblogging/)
+XEP](https://metajack.im/2010/01/23/the-inbox-files-2-microblogging/)
 recently. I'm glad more people are thinking about this.
 
 > [imoracle](http://twitter.com/imoracle): Finally, #Jaxl #BOSH

@@ -6,7 +6,7 @@ time: "17:07"
 extended: ":EXTENDED:"
 ---
 
-I'm building some new Erlang modules related to [OpenMicroblogging](http://openmicroblogging.org) and thought it would be good build them properly.  I wanted to be able to detect whether [Erlang](http://www.erlang.org) was installed, look for [ejabberd](http://www.ejabberd.im) header files, nsure that the ejabberd behaviors I needed were available, and compile and install the module.  Having recently written about [various new build systems](http://metajack.im/2008/09/07/battle-of-the-build-systems/), I decided to explore these to find an acceptable solution to my problem.  
+I'm building some new Erlang modules related to [OpenMicroblogging](http://openmicroblogging.org) and thought it would be good build them properly.  I wanted to be able to detect whether [Erlang](http://www.erlang.org) was installed, look for [ejabberd](http://www.ejabberd.im) header files, nsure that the ejabberd behaviors I needed were available, and compile and install the module.  Having recently written about [various new build systems](https://metajack.im/2008/09/07/battle-of-the-build-systems/), I decided to explore these to find an acceptable solution to my problem.  
 
 The short answer is that it wasn't a very fun way to spend my time, and despite my strong dislike of [autotools](http://www.gnu.org/software/autoconf/), I ended up using that in the end.  If you'd like the gory details as well as example code, keep reading.
 
@@ -96,7 +96,7 @@ Just like the header check, there isn't much in autoconf's Erlang support to hel
 
 Patching this in `aclocal.m4` fixes the regression, but we also need to pass in some options to `erl` when it runs the program.  This is, of course, not supported at all, and we have to patch this as well by passing in `ERLFLAGS` when `erl` is run so that it can hope to find the modules we're looking for.  The resulting macro is very similar to the one above except for the redefinition of `AC_LANG_ERLANG` that is needed to make it do anything useful.  
 
-I've put up my basic ejabberd module autoconf project skeleton [here](http://metajack.im/code/mod_autoconf.tar.gz) others to study or enjoy.
+I've put up my basic ejabberd module autoconf project skeleton [here](https://metajack.im/code/mod_autoconf.tar.gz) others to study or enjoy.
 
 ## A Note On Other Options
 

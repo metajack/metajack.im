@@ -6,7 +6,7 @@ time: "21:59"
 extended: ":EXTENDED:"
 ---
 
-[Erlang](http://www.erlang.org) behaviors are similar to interfaces in other languages.  They are essentially a required set of callbacks.  The [OTP](http://www.erlang.org/doc/design_principles/part_frame.html) libraries use them to separate the functional parts of a server from the non-functional parts, letting developers quickly leverage common design patterns.  I wrote about Erlang behaviors in my [ejabberd module tutorial](http://metajack.im/2008/08/28/writing-ejabberd-modules-presence-storms/) where we implemented ejabberd's `gen_mod` behavior.  Sometimes you'll want to craft your own behaviors that other developers can use.  
+[Erlang](http://www.erlang.org) behaviors are similar to interfaces in other languages.  They are essentially a required set of callbacks.  The [OTP](http://www.erlang.org/doc/design_principles/part_frame.html) libraries use them to separate the functional parts of a server from the non-functional parts, letting developers quickly leverage common design patterns.  I wrote about Erlang behaviors in my [ejabberd module tutorial](https://metajack.im/2008/08/28/writing-ejabberd-modules-presence-storms/) where we implemented ejabberd's `gen_mod` behavior.  Sometimes you'll want to craft your own behaviors that other developers can use.  
 
 
 
@@ -14,7 +14,7 @@ extended: ":EXTENDED:"
 
 ## Making Custom Behaviors
 
-Making your own behaviors is very simple, but for some reason is completely undocumented.  Aside from the `gen_mod` behavior of ejabberd as an example, the only information I could find was [a mailing list post](http://metajack.im/2008/08/28/writing-ejabberd-modules-presence-storms/index.html).
+Making your own behaviors is very simple, but for some reason is completely undocumented.  Aside from the `gen_mod` behavior of ejabberd as an example, the only information I could find was [a mailing list post](https://metajack.im/2008/08/28/writing-ejabberd-modules-presence-storms/index.html).
 
 To create your own behavior, you must make a module that exports a function, `behaviour_info/1`.  Note that while Erlang is American-English-friendly in regards to declaring behaviors, it is not as friendly when you are defining them.  For example, you can use either `-behavior(gen_server).` or `-behaviour(gen_server).` when you declare you module implements the `gen_server` behavior, but if you name the `behaviour_info/1` function without the 'u' it will not work.
 

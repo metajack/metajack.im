@@ -48,6 +48,6 @@ some extra Atom extensions for various kinds of metadata.
 I've written about microblogging and XMPP before. If you're curious:
 
 * [XMPP Microblogging
-  Thoughts](http://metajack.im/2008/09/10/xmpp-microblogging-thoughts/)
+  Thoughts](https://metajack.im/2008/09/10/xmpp-microblogging-thoughts/)
 * [An XMPP Microblogging
-  Stack](http://metajack.im/2008/09/15/an-xmpp-microblogging-stack/)
+  Stack](https://metajack.im/2008/09/15/an-xmpp-microblogging-stack/)

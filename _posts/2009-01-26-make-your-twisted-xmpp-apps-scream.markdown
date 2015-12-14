@@ -13,7 +13,7 @@ you're Twisted apps can scream with a new [C based XML serializer for
 Twisted](http://github.com/metajack/cserialize).
 
 *Note:* To speed up [ejabberd](http://www.ejabberd.im), please see
-[Speed Up Ejabberd](http://metajack.im/2009/01/18/speed-up-ejabberd/),
+[Speed Up Ejabberd](https://metajack.im/2009/01/18/speed-up-ejabberd/),
 which talks about a similar solution for [Erlang](http://www.erlang.org).
 
 The standard serialization code in Twisted can process approximately

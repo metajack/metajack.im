@@ -16,8 +16,8 @@ your feedback to the [Strophe
 group](http://groups.google.com/group/strophe/) or the [bug
 tracker](http://code.stanziq.com/strophe).
 
-* [strophejs-1.0rc2.zip](http://metajack.im/tmp/strophejs-1.0rc2.zip)
-* [strophejs-1.0rc2.tar.gz](http://metajack.im/tmp/strophejs-1.0rc2.tar.gz)
+* [strophejs-1.0rc2.zip](https://metajack.im/tmp/strophejs-1.0rc2.zip)
+* [strophejs-1.0rc2.tar.gz](https://metajack.im/tmp/strophejs-1.0rc2.tar.gz)
 
 The raw and minified versions of the library are included along with
 documentation in HTML format.

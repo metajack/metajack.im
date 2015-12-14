@@ -6,7 +6,7 @@ time: "16:40"
 extended: ":EXTENDED:"
 ---
 
-In [part one](http://metajack.im/2008/11/21/chesspark-design-details-part-1-why-xmpp/) we discussed the merits of [XMPP](http://www.xmpp.org) as a basis for [Chesspark](http://www.chesspark.com), and in [part two](http://metajack.im/2008/11/24/chesspark-design-details-part-2-session-handling/) we explored session handling.  Now we'll jump into the heart of Chesspark, which is the game design.  
+In [part one](https://metajack.im/2008/11/21/chesspark-design-details-part-1-why-xmpp/) we discussed the merits of [XMPP](http://www.xmpp.org) as a basis for [Chesspark](http://www.chesspark.com), and in [part two](https://metajack.im/2008/11/24/chesspark-design-details-part-2-session-handling/) we explored session handling.  Now we'll jump into the heart of Chesspark, which is the game design.  
 
 
 

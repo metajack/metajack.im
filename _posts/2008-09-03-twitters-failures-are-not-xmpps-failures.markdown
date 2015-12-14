@@ -16,7 +16,7 @@ For many, including myself, microblogging without XMPP is not very interesting. 
 
 ## The Same Mistakes Over Again
 
-Twitter's stability problems have been widely reported, and likely result from many factors.  Their issues with XMPP are fairly well known.  They made the mistake of making their first XMPP bot a normal user on an XMPP server.  This doesn't scale, as I have [written before](http://metajack.im/2008/08/04/thoughts-on-scalable-xmpp-bots/).
+Twitter's stability problems have been widely reported, and likely result from many factors.  Their issues with XMPP are fairly well known.  They made the mistake of making their first XMPP bot a normal user on an XMPP server.  This doesn't scale, as I have [written before](https://metajack.im/2008/08/04/thoughts-on-scalable-xmpp-bots/).
 
 The issue with this design is well known in the XMPP community; for example, see these [two](http://blogs.openaether.org/?p=52) [posts](http://blogs.openaether.org/?p=110) from 2005.
 
@@ -27,7 +27,7 @@ I was quite surprised to see [Identi.ca](http://identi.ca) repeat these same mis
 It's not that XMPP is not up to the job; people just keep making the same mistakes while trying to implement it.  I think this happens for a number of reasons.
 
 * XMPP is well documented as a protocol, but documentation about how to use it and how pieces fit together is scarce.  Maybe the upcoming book will help.  There was also much discussion of *informational* XEPs to supplement the protocol definitions.  This will improve over time.
-* XMPP software is still very young, and [it shows](http://metajack.im/2008/08/26/choosing-an-xmpp-server/).  It's ready for prime time, but one has to be on the lookout for bugs and ready to deal with them when they are found.  Unlike Web servers which have been tried and tested for many years, XMPP servers are all fairly new projects.  They are only just now coming into widespread use, and there are bound to be some growing pains.  None of these issues are related to XMPP as a protocol.
+* XMPP software is still very young, and [it shows](https://metajack.im/2008/08/26/choosing-an-xmpp-server/).  It's ready for prime time, but one has to be on the lookout for bugs and ready to deal with them when they are found.  Unlike Web servers which have been tried and tested for many years, XMPP servers are all fairly new projects.  They are only just now coming into widespread use, and there are bound to be some growing pains.  None of these issues are related to XMPP as a protocol.
 * XMPP is very different from HTTP.  Many people understand HTTP, and many developers have never used anything else.  XMPP is a world apart from HTTP.  REST services are built upon frameworks where the lifetime of the code is a single HTTP request.  XMPP services live indefinitely (one hopes), and this is a quite different problem.
 
 Documentation will improve, software will mature, and people will become more familiar with XMPP.  Such is the case with all new technology. 

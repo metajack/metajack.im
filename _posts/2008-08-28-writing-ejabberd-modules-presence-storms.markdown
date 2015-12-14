@@ -18,7 +18,7 @@ extended: ":EXTENDED:"
 
 <h2>Stopping Storms With A Little mod_sunshine</h2>
 
-<p>During our <a href="http://metajack.im/2008/08/27/migrating-to-ejabberd-the-gory-details/">ejabberd migration</a>, we ran into a bug in our desktop client that caused it to send the same presence stanza over and over in an infinite loop.  While providing an updated build of the client solved the problem for many of our users, some users refused to upgrade.  Not only did this cause a lot of undue stress on our XMPP server, it also affected all of the broken client's user's online contacts.  These presence storms were silently degrading the service quality for nearly everyone.</p>
+<p>During our <a href="https://metajack.im/2008/08/27/migrating-to-ejabberd-the-gory-details/">ejabberd migration</a>, we ran into a bug in our desktop client that caused it to send the same presence stanza over and over in an infinite loop.  While providing an updated build of the client solved the problem for many of our users, some users refused to upgrade.  Not only did this cause a lot of undue stress on our XMPP server, it also affected all of the broken client's user's online contacts.  These presence storms were silently degrading the service quality for nearly everyone.</p>
 
 <p>We decided that the best solution would be to detect presence storms and disconnect the offending clients.  This required writing a fairly simple ejabberd module that I named mod_sunshine.  We'll recreate the same code here.</p>
 

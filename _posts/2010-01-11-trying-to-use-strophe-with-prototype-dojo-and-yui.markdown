@@ -8,7 +8,7 @@ extended: ":EXTENDED:"
 
 I use [jQuery](http://jquery.com) quite a bit in my own JavaScript
 development, and I think it [works quite well with
-Strophe.js](http://metajack.im/2009/03/13/jquery-and-strophe-made-for-each-other/). However,
+Strophe.js](https://metajack.im/2009/03/13/jquery-and-strophe-made-for-each-other/). However,
 not everyone uses jQuery, so I want to write a series of tutorials
 on how to use the other popular JavaScript libraries with
 Strophe. Unfortunately, I am running into issues with stanza

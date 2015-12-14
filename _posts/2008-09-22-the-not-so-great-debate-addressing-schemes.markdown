@@ -6,7 +6,7 @@ time: "13:12"
 extended: ":EXTENDED:"
 ---
 
-In a federated network addressing becomes more complex than simply referring to a username.  There are lots of schemes for addressing, and this has become a hot topic in the OpenMicroblogging world ever since it was [discussed at BearHugCamp](http://metajack.im/2008/09/13/bearhugcamp-for-those-who-missed-it/).  Part of the debate is pointless since it boils down to aesthetics, and part of it is serious business.  Will we make use of the tools already available or should we invent something new?
+In a federated network addressing becomes more complex than simply referring to a username.  There are lots of schemes for addressing, and this has become a hot topic in the OpenMicroblogging world ever since it was [discussed at BearHugCamp](https://metajack.im/2008/09/13/bearhugcamp-for-those-who-missed-it/).  Part of the debate is pointless since it boils down to aesthetics, and part of it is serious business.  Will we make use of the tools already available or should we invent something new?
 
 :EXTENDED:
 

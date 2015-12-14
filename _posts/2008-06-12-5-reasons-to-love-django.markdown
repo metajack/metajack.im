@@ -6,7 +6,7 @@ time: "09:51"
 extended: ":EXTENDED:"
 ---
 
-Django is one of the best web frameworks out there.  Although <a href="http://metajack.im/2008/06/11/the-problem-with-django/">no project is perfect</a>, any project wanting to best Django has a tough act to follow.  Here's why:
+Django is one of the best web frameworks out there.  Although <a href="https://metajack.im/2008/06/11/the-problem-with-django/">no project is perfect</a>, any project wanting to best Django has a tough act to follow.  Here's why:
 <ol>
 	<li><strong>Django is a full stack</strong>.  This means that while it is possible to replace bits and pieces with other bits and pieces, it provides everything you need by default.  Each of the provided pieces is well integrated and works.  For example, the auto-generated admin interface is quite a time saver, and is possible only because the forms, templating, authentication, and ORM systems are all working nicely together.</li>
 	<li><strong>Django is trivial to extend</strong>.  When you are working on a project and you come up with some crazy idea, you can make it real in minutes. <a href="http://www.djangoproject.com/documentation/middleware/">Django Middleware</a> allows you to extend how requests are handled.  Want to add an HTTP response header that tells you how long it took Django to process the page? <a href="http://www.djangosnippets.org/snippets/797/">Done</a>.  Middleware also allows you to modify content.  This can be useful for <a href="http://www.djangosnippets.org/snippets/161/">database debugging</a>.  Want to add templating commands?  <a href="http://www.djangoproject.com/documentation/templates_python/#writing-custom-template-tags">Template tags</a> to the rescue.  The list goes on and on.</li>

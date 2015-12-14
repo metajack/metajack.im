@@ -6,7 +6,7 @@ time: "10:51"
 extended: ":EXTENDED:"
 ---
 
-Yesterday I blogged about <a href="http://metajack.im/2008/08/26/choosing-an-xmpp-server/">choosing an XMPP server</a>.  Once you've made this decision, it is time to get it set up and running great.  If this is your first XMPP server, this is often just some software installation and a little bit of configuration.  However, for those who already have an existing set up, or who have special data or run time requirements, this can involve a substantial amount of work.  It took us about a week to move from jabberd2 to ejabberd at <a href="http://www.chesspark.com/">Chesspark</a>, and this is how we did it.  While I talk mostly about ejabberd and jabberd2, many of the issues are similar to those any deployment or redeployment would face.
+Yesterday I blogged about <a href="https://metajack.im/2008/08/26/choosing-an-xmpp-server/">choosing an XMPP server</a>.  Once you've made this decision, it is time to get it set up and running great.  If this is your first XMPP server, this is often just some software installation and a little bit of configuration.  However, for those who already have an existing set up, or who have special data or run time requirements, this can involve a substantial amount of work.  It took us about a week to move from jabberd2 to ejabberd at <a href="http://www.chesspark.com/">Chesspark</a>, and this is how we did it.  While I talk mostly about ejabberd and jabberd2, many of the issues are similar to those any deployment or redeployment would face.
 
 <strong>What We Knew At The Start</strong>
 
@@ -60,7 +60,7 @@ Once the site came back up, we immediately noticed some problems that we had not
 
 <strong>Solving The Problems</strong>
 
-The database problems were the easiest to diagnose thanks to our <a href="http://metajack.im/2007/07/25/do-you-know-what-your-database-is-doing/">database profiling tools</a>.  It was easy to spot a query that was missing an index, and this immediately caused load to drop.  Query traffic was still much to high, and we found two causes for this.
+The database problems were the easiest to diagnose thanks to our <a href="https://metajack.im/2007/07/25/do-you-know-what-your-database-is-doing/">database profiling tools</a>.  It was easy to spot a query that was missing an index, and this immediately caused load to drop.  Query traffic was still much to high, and we found two causes for this.
 
 The first cause was our buggy client application which was in an infinite loop sending presence.  This caused a presence storm on the server, causing thousands of useless packets to be sent both to the server and to the user's contacts.  This affected database queries because of the second problem.
 

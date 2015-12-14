@@ -16,7 +16,7 @@ There is a huge problem with client bots - rosters.  If part of the client bot'
 
 First, querying large rosters from persistent storage is an expensive task for the XMPP server.  Many servers are written with the assumption that all rosters are fairly small.  Once rosters become tens of thousands of entries long, this starts to affect performance elsewhere in the system.
 
-Second, a large roster means an enormous stanza in the connection startup.  As I've written before, <a href="http://metajack.im/2008/06/10/binary-data-is-xmpps-achilles-heel/">large stanzas are bad</a>.  Pretty much all processing will stop for the bot while it receives and deals with this stanza.  If that stanza takes more than a few seconds to receive, users will notice this delay when the bot starts up.
+Second, a large roster means an enormous stanza in the connection startup.  As I've written before, <a href="https://metajack.im/2008/06/10/binary-data-is-xmpps-achilles-heel/">large stanzas are bad</a>.  Pretty much all processing will stop for the bot while it receives and deals with this stanza.  If that stanza takes more than a few seconds to receive, users will notice this delay when the bot starts up.
 
 Both of these issues affect startup only.  It's not a big deal if your bot has 100% uptime, but this is unachievable.  Even worse, if you run into a crash bug, the bot can start to destroy performance of itself and of the server it is connected to.  In May of last year, this is what happened to Twitter as its bot passed the 40,000 roster item mark.
 

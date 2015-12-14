@@ -6,7 +6,7 @@ time: "09:00"
 extended: ":EXTENDED:"
 ---
 
-XMPP is [perfect for microblogging](http://metajack.im/2008/09/10/xmpp-microblogging-thoughts/), but so far no one is backing that up with an implementation.  Inspired by [Stefan's post](http://blog.jwchat.org/2008/09/09/xmpp-and-microblogging-lets-do-it/), a few of us are gearing up to take a crack at it.  I had separate conversations recently with [Anders](http://anders.conbere.org/) and [Matthew](http://matthewwild.co.uk) about what an XMPP microblogging service would look like, and I think the best way to kick off the project is to collect my thoughts here for others to comment on and discuss.   How would we build an XMPP microblogging stack?
+XMPP is [perfect for microblogging](https://metajack.im/2008/09/10/xmpp-microblogging-thoughts/), but so far no one is backing that up with an implementation.  Inspired by [Stefan's post](http://blog.jwchat.org/2008/09/09/xmpp-and-microblogging-lets-do-it/), a few of us are gearing up to take a crack at it.  I had separate conversations recently with [Anders](http://anders.conbere.org/) and [Matthew](http://matthewwild.co.uk) about what an XMPP microblogging service would look like, and I think the best way to kick off the project is to collect my thoughts here for others to comment on and discuss.   How would we build an XMPP microblogging stack?
 
 :EXTENDED:
 
@@ -56,4 +56,4 @@ We also plan to develop some aggregation tools.  These will consume public feeds
 
 ## Looking For Feedback
 
-I talked to several people at [BearHugCamp](http://metajack.im/2008/09/13/bearhugcamp-for-those-who-missed-it/) about this, and people seemed quite excited.  We'd love more feedback from the OMB and XMPP communities these ideas.  Please leave a comment!
+I talked to several people at [BearHugCamp](https://metajack.im/2008/09/13/bearhugcamp-for-those-who-missed-it/) about this, and people seemed quite excited.  We'd love more feedback from the OMB and XMPP communities these ideas.  Please leave a comment!

@@ -12,7 +12,7 @@ done this year.
 * [Chesspark](http://www.chehsspark.com) added many new features,
   fixed many bugs, and tried several huge experiments.  We explored
   the [freemium
-  model](http://metajack.im/2008/09/12/dont-be-afraid-of-change/) as
+  model](https://metajack.im/2008/09/12/dont-be-afraid-of-change/) as
   opposed to straight subscriptions, we launched
   [WuChess](http://www.wuchess.com) as a branded site in cooperation
   with [RZA](http://en.wikipedia.org/wiki/RZA), and we've spun it off
@@ -21,7 +21,7 @@ done this year.
 * [Stanziq](http://www.stanziq.com) was
   [born](http://mashable.com/2008/12/01/stanziq/) from a combination
   of our vision of the new [real time
-  Web](http://metajack.im/2008/09/11/real-time-is-completely-different/)
+  Web](https://metajack.im/2008/09/11/real-time-is-completely-different/)
   and many ideas we had at Chesspark.  The world needs a real time
   search engine.
 
@@ -31,7 +31,7 @@ done this year.
   [IRC](http://en.wikipedia.org/wiki/Irc) to die.
 
 * I [learned some new
-  languages](http://metajack.im/2008/10/22/be-multi-lingual-and-learn-a-new-language/).
+  languages](https://metajack.im/2008/10/22/be-multi-lingual-and-learn-a-new-language/).
   I have spent quite a bit of time with
   [Erlang](http;//www.erlang.org) this year, and I'm looking forward
   to solving more problems with it in 2009.  I've also
@@ -43,7 +43,7 @@ done this year.
 * I experimented with both [Bazaar](http://bazaar-vcs.org) and
   [Git](http://git.or.cz) heavily to replace my use of
   [Subversion](http://subversion.tigris.org).  I ended up [picking
-  Git](http://metajack.im/2008/12/08/codestanziqcom-switching-to-git/)
+  Git](https://metajack.im/2008/12/08/codestanziqcom-switching-to-git/)
   and have been extremely happy.
 
 * I renewed my commitment to XMPP by joining both the

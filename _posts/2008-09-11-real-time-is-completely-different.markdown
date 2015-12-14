@@ -12,7 +12,7 @@ Everyone knows that HTTP polling sucks.  [Roy Fielding](http://roy.gbiv.com) is 
 
 ## A Comparison
 
-Roy's Flickr example is excellent.  His solution is appropriate for most uses and is extensible (see below on older state changes).  I'm going to use his example here even though there is an argument to be made that real time updates of Flickr information are unnecessary.  Microblogging has seen the [power of real time](http://metajack.im/2008/09/03/twitters-failures-are-not-xmpps-failures/), and I think other services could benefit from it as well.
+Roy's Flickr example is excellent.  His solution is appropriate for most uses and is extensible (see below on older state changes).  I'm going to use his example here even though there is an argument to be made that real time updates of Flickr information are unnecessary.  Microblogging has seen the [power of real time](https://metajack.im/2008/09/03/twitters-failures-are-not-xmpps-failures/), and I think other services could benefit from it as well.
 
 ### HTTP
 
@@ -36,7 +36,7 @@ Each time a user's state changed, an event notification would go out to all inte
 
 This is much more efficient as data is sent exactly when it updates and no further requests are needed to obtain it.  Data transfer efficiency is achieved in a few ways.  
 
-First, connections can be aggregated via s2s.  Flickr does not need an XMPP connection per interested party, it just needs one per domain.  A [scalable s2s bot](http://metajack.im/2008/08/04/thoughts-on-scalable-xmpp-bots/) can be used handle notifications, making this solution quite nice.
+First, connections can be aggregated via s2s.  Flickr does not need an XMPP connection per interested party, it just needs one per domain.  A [scalable s2s bot](https://metajack.im/2008/08/04/thoughts-on-scalable-xmpp-bots/) can be used handle notifications, making this solution quite nice.
 
 Next, XMPP Pubsub notifications could be improved to reduce duplicate data.  Instead of sending one event to each interested party at Gmail, it could send one event that has multiple addresses.  Gmail can deliver these to the individual subscribers.  This is a lot like IP multicast.
 

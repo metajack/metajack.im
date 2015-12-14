@@ -20,7 +20,7 @@ being able to write well.
 
 I am always striving to improve my skills through practice, whether it
 is [learning a new
-language](http://metajack.im/2008/10/22/be-multi-lingual-and-learn-a-new-language/)
+language](https://metajack.im/2008/10/22/be-multi-lingual-and-learn-a-new-language/)
 or doing regular blogging.  I've found this practicing to be
 immensely helpful in a wide range of situations.
 

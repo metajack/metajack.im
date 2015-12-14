@@ -7,7 +7,7 @@ extended: ":EXTENDED:"
 ---
 
 When Chesspark [migrated to
-ejabberd](http://metajack.im/2008/08/27/migrating-to-ejabberd-the-gory-details/)
+ejabberd](https://metajack.im/2008/08/27/migrating-to-ejabberd-the-gory-details/)
 I explained how we modified ejabberd's authentication and SQL queries
 to support storing users by their bare JIDs instead of just the local
 parts (the foo part of foo@example.com). This let's each vhost in
